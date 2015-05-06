@@ -1,0 +1,77 @@
+/*=========GLOBAL STYLES=========*/
+@import url("http://fonts.googleapis.com/css?family=Arvo");
+body{
+	font-size : 100%; 
+	// font-size: 65%; // EM Reset
+	@include font-smoothing();
+}
+#{headings()} {
+	@include proximaNovaExtraBold();
+}
+h2 {
+	color : $h2Color;
+	font-size : 2.3em; 
+}
+h3{
+	color : $h3Color;
+	font-size : 1.8em; 
+}
+h4 {
+	color : $h4Color;
+	@include arvoRegular();
+	font-size : 1.5em; 
+	text-transform: none;
+	margin-bottom: 10px;
+	line-height : 30px;
+}
+p{
+	color : $paragraphs;
+	line-height : 25px;
+	font-size: 1.1em;
+}
+span.event_date {
+	@include proximaNovaBold();
+	font-size : 0.7em;//14px
+	display : block;
+	margin-bottom : 0.8%;
+	color : $eventDate;
+}
+span.event_name {
+	@include proximaNovaLight();
+	font-size : 1.4em;//22px
+	display : block;
+	margin-bottom: 0.8%;
+	color : $regisrationSecHeading;
+	line-height: 25px;
+}
+span.italics {
+	@include arvoItalic();
+	font-size : 0.875em;//14px
+	display : block;
+	color : $heroItalics;
+	line-height: 20px;
+}
+a.button {
+	@include proximaNovaExtraBold();
+	font-size :  0.750em;
+	text-decoration : none;
+	background : $buttons;
+	display : inline-block;
+	width : 100px;
+	padding : 15px;
+	text-align : center;
+	color : $button_text;  
+}
+
+div.event_nameDate{
+	float: left;
+	width: 80%;
+}
+div.event_button{
+	float: right;
+	width: 20%;
+	margin-top: 15px;
+	a.button{
+		float: right;
+	}
+}

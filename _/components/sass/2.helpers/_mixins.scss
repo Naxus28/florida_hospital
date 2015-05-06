@@ -1,0 +1,52 @@
+/**********FONTS**********/
+@mixin arvoRegular() {
+	font-family: $arvo; 
+	font-weight: 400; 
+	font-style: normal;
+}
+@mixin arvoBold() {
+	font-family: $arvo; 
+	font-weight: 700; 
+	font-style: normal;
+}
+@mixin arvoItalic() {
+	font-family: $arvo; 
+	font-weight: 400; 
+	font-style: italic;
+}
+@mixin proximaNovaLight() {
+	font-weight: 300; 
+	font-style: normal;
+}
+@mixin proximaNovaRegular() {
+	font-weight: 400; 
+	font-style: normal;
+}
+@mixin proximaNovaBold() {
+	font-weight: 700; 
+	font-style: normal;
+	text-transform: uppercase;
+}
+@mixin proximaNovaExtraBold() {
+	font-weight: 800; 
+	font-style: normal;
+	text-transform: uppercase;
+}
+
+/*****ANTI ALIASING*****/
+@mixin font-smoothing($value: antialiased) {
+  @if $value == antialiased {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  @else {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+  }
+}
+
+
+
+
+
+

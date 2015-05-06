@@ -1,0 +1,150 @@
+/*=========ARTICLE IDEAS LAYOUT=========*/
+article.ideas{
+	margin-bottom: 70px;
+	margin-top: 70px;
+	section.tabs{
+		div.tabs_container{
+			@include clearfix;
+			.tabs_menu {
+				@include clearfix;
+				background: $unselected_tab;
+				margin-bottom: 0;
+				li{
+					float: left;
+					list-style-type: none;
+
+					&:first-child{
+						margin-left: 40px;
+					}
+					a{
+						color: $tabs_text;
+						text-decoration: none; 
+						display: inline-block;
+						padding: 18px 20px;
+						font-size: 0.9em;
+						cursor: pointer;
+						@include proximaNovaBold();
+					}
+				}
+				li.current {
+				   position: relative;
+				   background-color: $blueBoxes;
+				   z-index: 5;
+				   @include transition(all 0.3s);
+				}
+				.current a {
+					color: $white;
+				}
+			}
+			.tab {
+				float: left;
+				width: auto;
+				clear:both;
+			}
+
+			#tab_1 {
+				display: block;   
+			}
+			div.tab_content{
+				display: none;
+				h3{
+					font-size: 1.1em;
+					padding-top: 30px;
+					padding-bottom: 20px;
+					letter-spacing: 1.4px;
+				}
+				>p{
+					background: $tabs_content_background;
+					font-size: 1.1em;
+					color: $white;
+					padding: 70px 30%;
+					@include arvoRegular();
+					text-align: center;
+				}
+				div.grid_row{
+					// display: table;
+					// table-layout: fixed;
+					width: 100%;
+					// @include clearfix;
+				}
+				div.grid_content{
+					
+					// display: table-cell;
+					width:33.33%;
+					float: left;
+					border-bottom: 1px solid $grayEight;
+					position:relative;
+					@include box-sizing(border-box);
+					&:nth-child(2){
+						outline: 1px solid $grayEight;
+					}
+					img{
+						width: 100%;
+						outline: 1px solid $white;
+					}
+					div{
+						padding-bottom: 120px;
+						padding-left: 20px;
+						padding-right: 20px;
+						a{
+							display: inline-block;
+							margin-left: 0;
+							margin-top:20px;
+							margin-bottom: 20px;
+							position: absolute;
+							left:20;
+							bottom: 0;
+						}
+					}
+				}
+			}
+		}
+	}	
+}
+
+/*=========ARTICLE IDEAS STYLES=========*/
+
+
+
+/*=========MEDIA QUERIES=========*/
+
+
+/* Samsungs 3,4,5 and iPhones 5, 6, and 6+ ----------- */
+@media screen and (max-width : 768px){
+	article.ideas{
+		margin: 35px 0;
+		section.tabs{
+			div.tabs_container{
+				padding-left: 0;
+				div.tab_content{ 
+					p{
+						padding-left: 15px;
+						padding-right: 15px;
+					}
+					div.grid_content{
+						width: 100%;
+						display: block;
+						img{
+							width: 100%;
+							outline: none;
+						}
+						div{
+							padding-left: 15px;
+							padding-right: 15px;
+							padding-bottom: 0;
+							p{
+								padding: 0;
+							}
+							a.button{
+								margin-bottom: 35px;
+								margin-top: 35px;
+								position: static;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
