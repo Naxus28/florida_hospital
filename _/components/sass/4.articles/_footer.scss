@@ -1,0 +1,21 @@
+/*=========MEDIA QUERIES=========*/
+
+/* iPads (portrait and landscape) ----------- */
+@media only and (max-width : 1024px) {
+
+}
+
+/* Samsungs 3,4,5 and iPhones 5, 6, and 6+ ----------- */
+@media screen and (max-width : 768px){
+	footer{
+		display: block;
+	}
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media screen and (max-width : 480px){
+	footer{
+		display: block;
+	}
+}
+

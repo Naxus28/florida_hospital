@@ -1,0 +1,46 @@
+/*********************************
+Date: 02/09/2014
+Developer: Gabriel Ferraz
+Company: Purple Rock Scissors
+Project: Florida Hospital
+**********************************/
+
+@import "compass";
+//reference: http://compass-style.org/reference/compass/
+
+@import "compass/reset";
+//Eric Mayers reset: //http://compass-style.org/reference/compass/reset/ and http://compass-style.org/reference/compass/reset/utilities/
+
+@import "compass/css3/transform";
+//mixins for css transform
+
+@import "compass/css3/transition";
+//mixins for css transition
+
+@import "compass/css3/box-sizing";
+//box-sizing mixin
+
+// @import "susy";
+// @import "susyone";
+
+
+//using gem sass-globbing. This gem allows to import entire folders
+//reference: https://github.com/chriseppstein/sass-globbing
+//Folders have to be imported on this order: 
+
+@import "1.modules/*";
+//inclues colors, typography, and variables
+
+@import "2.helpers/*";
+//includes mixins
+
+@import "3.partials/*";
+//includes base styles and global layout
+
+@import "4.articles/*";
+//includes styles for different parts of the page
+
+
+
+
+

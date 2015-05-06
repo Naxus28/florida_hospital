@@ -1,0 +1,455 @@
+/*=========ARTICLE EVENTS LAYOUT=========*/
+article.events{
+	// margin-bottom: 40px;
+	clear: both;
+	padding-top: 70px;
+	@include clearfix;
+	section:nth-child(1){
+		padding-bottom: 60px;
+		@include clearfix;
+		div{
+			width:50%;
+			float: left;
+		}
+	}
+	section:nth-child(2){
+		padding-bottom: 60px;
+		@include clearfix;
+		div{
+			float: left;
+		}
+		div:nth-child(1){
+			padding-right: 4%;
+			width: 40%;
+			span.featured_event_header{
+				margin-bottom: 30px;
+			}
+			img{
+				width: 100%;
+			}
+		}
+		div:nth-child(2){
+			width: 56%;
+			max-height: 100%;
+			span.event_date{
+				margin-top: 42px;
+			}
+			span.event_name{
+				padding: 2% 0;
+			}
+			a.button, span{
+				display: block;
+			}
+			span{
+				span{
+					display: block;
+					line-height: 25px;
+				}
+			}
+			p.event_description{
+				@include proximaNovaRegular();
+				color: $event_paragraph_color;
+				font-size: 0.8em;
+				line-height: 20px;
+				margin: 3.6% 0;
+			}
+		}
+	}
+	section.upcoming_events{
+		padding: 3% 3% 0 0;
+		width: 100%;
+		h3{
+			margin-bottom: 3%;
+			padding-left: 30px;
+		}
+		div + a.button{
+			margin: 30px 0px 70px 30px;
+		}
+		div.upcoming_events_wrapper{
+			display: table;
+			border-collapse: separate;
+			border-spacing: 30px 0px;
+			width: 100%;
+			div{
+				overflow: hidden;
+				height: 240px;
+				position: relative;
+				display: table-cell;
+				width: 21.3333%;
+				padding: 30px;
+				span.event_date, span.event_name{
+					margin-bottom: 18px;
+				}
+				a.button{
+					position: absolute;
+					bottom: 30px;
+					background: $white;
+					color: $events_links_color;
+					border: 1px solid $events_links_border;
+				}
+			}
+		}
+	}
+}
+
+/*=========ARTICLE EVENTS STYLES=========*/
+article.events{
+	section{
+		&:nth-child(1), &:nth-child(2){
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+	}
+	background: $sections_background;
+	span.featured_event_header{
+		font-weight: 700;
+		font-style: normal;
+		text-transform: uppercase;
+		font-size: 0.875em;
+		display: block;
+		margin-bottom: 0.8%;
+		color: $featured_event;
+	}
+	section.upcoming_events{
+		background: $upcomingEvents_background;
+		div.upcoming_events_wrapper{
+			background: $upcomingEvents_background;
+		}
+		h3{
+			font-weight: 700;
+			font-style: normal;
+			text-transform: uppercase;
+			font-size: 0.875em;
+			color: $featured_event;
+		}
+		div{
+			background: $white;
+		}
+	}
+}
+
+
+/*=========MEDIA QUERIES=========*/
+
+
+/* Desktops and laptops ----------- */
+@media screen  and (min-width : 1224px) {
+	article.events{
+		section:nth-child(2){
+			div:nth-child(1){
+
+			}
+			div:nth-child(2){
+				span.event_date{
+					font-size: 0.9em;
+				}
+				span.event_name{
+					font-size: 1.6em;
+				}
+				span.italics{
+					font-size: 1em;
+				}
+				p.event_description{
+					font-size: 1em;
+					line-height: 25px;
+					margin-top: 30px;
+				}
+				a.button{
+					margin-top: 54px;
+				}
+			}
+		}
+	}
+}
+
+
+/* iPads (landscape) ----------- */
+@media screen and (max-width : 1024px) {
+	article.events{
+		section:nth-child(2){
+			div:nth-child(1){
+
+			}
+			div:nth-child(2){
+				p.event_description{
+					margin-top: 4.9%;
+					margin-bottom: 4.9%;
+				}
+			}
+		}
+	}
+}
+/* iPads (portrait and landscape) ----------- */
+@media screen and (max-width : 800px) {
+	article.events{
+		section:nth-child(2){
+			div:nth-child(1){
+				padding-right: 4%;
+				width: 46%;
+			}
+			div:nth-child(2){
+				width: 50%;
+				span.event_name{
+					padding: 1.5% 0;
+				}	
+				p.event_description{
+					margin-top: 2%;
+					margin-bottom: 2%;
+				}
+			}
+		}
+	}
+}
+@media screen and (min-width : 769px) and (max-width : 790px) {
+	article.events{
+		section.upcoming_events{
+			div.upcoming_events_wrapper{
+				div{
+					height: 270px;
+				}
+			}
+		}
+	}
+}
+
+/* Samsungs 3,4,5 and iPhones 5, 6, and 6+ ----------- */
+@media screen and (max-width : 768px){
+	article.events{
+		padding-top: 35px;
+		section:nth-child(1){
+			padding-left: 15px;
+			padding-right: 15px;
+			padding-bottom: 40px;
+			div{
+				width:100%;
+				float: none;
+				&:first-child{
+					margin-bottom: 20px;
+				}
+			}
+		}
+		section:nth-child(2){
+			padding-bottom: 40px;
+			padding-left: 15px;
+			padding-right: 15px;
+			div{
+				float: none;
+			}
+			div:nth-child(1){
+				padding-right: 4%;
+				width: 100%;
+				span.featured_event_header{
+					margin-bottom: 20px;
+				}
+				img{
+					width: 100%;
+				}
+			}
+			div:nth-child(2){
+				width: 100%;
+				max-height: 100%;
+				span.event_date{
+					margin-top: 42px;
+					font-size: 0.9em;
+				}
+				span.event_name{
+					padding: 0;
+					margin-bottom: 10px;
+					margin-top: 10px;
+					// margin-top: 20px;
+				}
+				span.italics{
+					margin-top: 0px;
+					// line-height: 25px;
+				}
+				a.button{
+					display: block;
+					margin-top: 40px;
+				}
+				span{
+					line-height: 25px;
+				}
+				p.event_description{
+					font-size: 1em;
+					line-height: 25px;
+					margin-top: 20px;
+				}
+			}
+		}
+		section.upcoming_events{
+			@include clearfix;
+			padding: 0;
+			// width: 100%;
+			display: block;
+			float:none;
+			h3{
+				padding: 15px;
+				margin-bottom: 20px;
+				margin-top: 20px;
+			}
+			div + a.button{
+				// display: inline-block;
+				margin: 20px 0px 70px 15px;
+			}
+			div.upcoming_events_wrapper{
+				display: block;
+				width: 100%;
+				padding-left: 15px;
+				padding-right: 15px;
+				@include box-sizing(border-box);
+				@include clearfix;
+				div{
+					@include box-sizing(border-box);
+					overflow: hidden;
+					height: 240px;
+					position: relative;
+					float: none;
+					display: block;
+					width: 100%;
+					margin: 20px 0;
+					padding: 30px;
+					&:first-child{
+						margin-top: 0;
+					}
+					span.event_date, span.event_name{
+						margin-bottom: 18px;
+					}
+					a.button{
+						position: absolute;
+						bottom: 30px;
+						background: $white;
+						color: $events_links_color;
+						border: 1px solid $events_links_border;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media screen and (max-width : 480px){	
+	article.events{
+		padding-top: 35px;
+		section:nth-child(1){
+			padding-left: 15px;
+			padding-right: 15px;
+			padding-bottom: 40px;
+			div{
+				width:100%;
+				float: none;
+				&:first-child{
+					margin-bottom: 20px;
+				}
+			}
+		}
+		section:nth-child(2){
+			padding-bottom: 40px;
+			padding-left: 15px;
+			padding-right: 15px;
+			div{
+				float: none;
+			}
+			div:nth-child(1){
+				padding-right: 4%;
+				width: 100%;
+				span.featured_event_header{
+					margin-bottom: 20px;
+				}
+				img{
+					width: 100%;
+				}
+			}
+			div:nth-child(2){
+				width: 100%;
+				max-height: 100%;
+				span.event_date{
+					margin-top: 42px;
+					font-size: 0.9em;
+				}
+				span.event_name{
+					padding: 0;
+					margin-bottom: 10px;
+					margin-top: 10px;
+					// margin-top: 20px;
+				}
+				span.italics{
+					margin-top: 0px;
+					// line-height: 25px;
+				}
+				a.button{
+					display: block;
+					margin-top: 40px;
+				}
+				span{
+					line-height: 25px;
+				}
+				p.event_description{
+					font-size: 1em;
+					line-height: 25px;
+					margin-top: 20px;
+				}
+			}
+		}
+		section.upcoming_events{
+			@include clearfix;
+			padding: 0;
+			// width: 100%;
+			display: block;
+			float:none;
+			h3{
+				padding: 15px;
+				margin-bottom: 20px;
+				margin-top: 20px;
+			}
+			div + a.button{
+				// display: inline-block;
+				margin: 20px 0px 70px 15px;
+			}
+			div.upcoming_events_wrapper{
+				display: block;
+				width: 100%;
+				padding-left: 15px;
+				padding-right: 15px;
+				@include box-sizing(border-box);
+				@include clearfix;
+				div{
+					@include box-sizing(border-box);
+					overflow: hidden;
+					height: 240px;
+					position: relative;
+					float: none;
+					display: block;
+					width: 100%;
+					margin: 20px 0;
+					padding: 30px;
+					&:first-child{
+						margin-top: 0;
+					}
+					span.event_date, span.event_name{
+						margin-bottom: 18px;
+					}
+					a.button{
+						position: absolute;
+						bottom: 30px;
+						background: $white;
+						color: $events_links_color;
+						border: 1px solid $events_links_border;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width : 320px){
+	article.events{
+		section.upcoming_events{
+			div.upcoming_events_wrapper{
+				div{
+					height: 290px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,269 @@
+/*=========HEADER LAYOUT=========*/
+header {
+	position : relative;
+	height : 100%;
+	padding-top: 25px;
+	overflow: hidden;
+	
+	div.branding~a~img{
+		position : absolute;
+		top : 30px;
+		right : 30px;
+	}
+	/*****ASIDE*****/
+	aside.menu {
+		position : absolute;
+		top : 0;
+		right : 0;
+		width : 250px;
+		height : 100%;
+		margin-right : 0;
+		background : #ccc;
+		@include translate(100%, 0);
+		@include transition(all 0.5s ease-in-out);
+		nav{
+			li {
+				padding: 20px;
+			}
+		}
+	}
+}
+
+/*=========HEADER STYLES=========*/
+header {
+	background: url("../../images/resources/hero_bg.jpg") no-repeat center center;
+	background-size: cover;
+	h1 {
+		color : $h1Color;
+		font-size : 2.1em;
+		text-indent: 100%;
+	    white-space: nowrap;
+	    overflow: hidden;
+	    float: left;
+	    display: none;
+	}
+	p {
+		@include proximaNovaRegular();
+		color : $header_text;
+		font-size : 0.750em;
+	}
+	aside.menu{
+		background : $white;
+		@include proximaNovaBold();
+		font-size :  1em;
+		ul{
+			margin-left : 20px;
+		}
+		.close_menu{
+			font-size : 1.4em;
+			color : $menu_links_hover;
+			margin-right : 20px;
+			text-align : right;
+		}
+		a{
+			text-decoration : none;
+			color : $menu_links;
+			@include transition(all 0.2s ease-in);
+			&:hover{
+				color : $menu_links_hover;
+			}
+		}
+	}
+	.hero_message {
+		p:first-child {
+		width: 80%;
+		margin: 18% auto 0;
+		@include proximaNovaBold();
+		font-size : 1.2em;//19px
+		text-align : center;
+		line-height : 40px; 
+			span {
+				display : block;
+				@include proximaNovaExtraBold();
+				font-size : 2.8em;//53px
+				text-align : center;
+				line-height: 50px;
+			}
+		}
+		p:nth-child(2){
+			font-size : 1.3em; //24px
+			width: 70%;
+			margin: 20px auto 0;
+			@include arvoItalic();
+			text-align : center; 
+			span{
+				display : block;
+				line-height : 30px; 
+			}
+		}
+	}
+	.open_menu, .close_menu{
+		cursor: pointer;
+	}
+	.registration_callOut{
+		width : 70%;
+		margin : 18% auto 1%; 
+		padding : 20px 30px;
+		background : #e8ebed;
+		@include clearfix;
+	}
+	div.event_nameDate{
+		float: left;
+		width: 80%;
+	}
+	div.event_button{
+		float: right;
+		width: 20%;
+		margin-top: 15px;
+		a.button{
+			float: right;
+		}
+	}
+	span.italics {
+		margin-bottom: 0.8%;
+	}
+	span.event_registration {
+		@include proximaNovaBold();
+		display : block;
+		color : $regisrationPrimHeading;
+		padding-bottom : 3%;
+	}
+}
+
+
+/*=========MEDIA QUERIES=========*/
+
+/* iPads (portrait and landscape) ----------- */
+@media screen and (min-width : 1024px) {
+	header {
+		.hero_message{
+			p:nth-child(2){
+				width: 60%;
+			}
+		}
+	}
+}
+
+/* Samsungs 3, 4, 5 and iPhones 5, 6, and 6+ ----------- */
+@media screen and (max-width : 768px){
+	header {
+		padding-top: 20px;
+		div.branding ~ a ~ img{
+			right: 15px;
+			top: 20px;
+		}
+		aside.menu {
+			width : 200px;
+		}
+		.hero_message {
+			p:first-child {
+			font-size : 1.2em;//19px
+			line-height : 25px;
+			width: 95%; 
+			margin-top: 12%;
+				span {
+					margin-top: 10px;
+					font-size : 2.2em;//53px
+					line-height: 45px;
+					letter-spacing: 1.2px;
+				}
+			}
+			p:nth-child(2){
+				margin-top: 10px;
+				font-size : 1.1em; //24px
+				width: 80%;
+			}
+		}
+		.registration_callOut{
+			@include box-sizing(border-box);
+			width : 80%;
+			padding : 10px 15px;
+			margin-bottom: 20px;
+		}
+		div.event_nameDate{
+			float: none;
+			clear: both;
+			width: 100%;
+		}
+		div.event_button{
+			clear: both;
+			@include clearfix;
+			float: none;
+			width: 100%;
+			margin-top: 15px;
+			a.button{
+				float: left;
+			}
+		}
+	}
+}
+@media screen and (max-width : 600px){
+	header {
+		.hero_message {
+			p:first-child {
+			font-size : 1em;
+				span {
+					font-size : 2em;
+					line-height: 35px;
+				}
+			}
+			p:nth-child(2){
+				font-size : 0.9em; 
+			}
+		}
+	}
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media screen and (max-width : 480px){
+	header {
+		padding-top: 20px;
+		div.branding ~ a ~ img{
+			right: 15px;
+			top: 20px;
+		}
+		aside.menu {
+			width : 200px;
+		}
+		.hero_message {
+			p:first-child {
+			font-size : 1.2em;
+			line-height : 25px;
+			width: 95%; 
+			margin-top: 12%;
+				span {
+					margin-top: 10px;
+					font-size : 1.8em;
+					line-height: 35px;
+					letter-spacing: 1.2px;
+				}
+			}
+			p:nth-child(2){
+				margin-top: 10px;
+				font-size : 0.9em; //24px
+				width: 80%;
+			}
+		}
+		.registration_callOut{
+			@include box-sizing(border-box);
+			width : 100%;
+			padding : 10px 15px;
+			margin-bottom: 20px;
+		}
+		div.event_nameDate{
+			float: none;
+			clear: both;
+			width: 100%;
+		}
+		div.event_button{
+			clear: both;
+			@include clearfix;
+			float: none;
+			width: 100%;
+			margin-top: 15px;
+			a.button{
+				float: left;
+			}
+		}
+	}
+}	

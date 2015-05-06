@@ -1,0 +1,321 @@
+/*=========ARTICLE FIVE REASONS STYLES=========*/
+.five_reasons{
+	section.reasons_title{
+		position : relative;
+		h3{
+			text-align : center;
+			margin-top : 70px;
+			padding-top : 50px;
+			padding-bottom : 50px;
+			color : $h2Color;
+			letter-spacing : 3px;
+			line-height: 35px;
+			border-bottom: 1px solid $divisionLines; 
+			border-top : 1px solid $divisionLines;
+			span{
+				display : block;
+			}
+		}
+		.center {
+			height:18px;
+			padding : 5px;
+			background : $white;
+			position : absolute;
+			left: 50%;
+			top: 98%; 
+			margin-left: -18px;
+			margin-top: -9px;
+			border-radius : 50%;
+			img{
+				border-radius : 50%;
+			}
+		}
+	}
+	section.leaders{
+		.physicians_left, .physicians_right{
+			display:none;
+		}
+		.reasons_wrapper{
+			margin-bottom : 60px;
+			@include clearfix;
+		}
+		// .physicians{
+		// 	display: table-row-group;
+		// }
+		ul { 
+			list-style: none; 
+			width: 100%; 
+			// display: table-row;
+			li { 
+				float : left;
+				width : 20%;
+				position : relative;
+				// display : table-cell;
+				&:hover .physicians_overlay {
+				    opacity : 1;
+				    background : $physiciansImg_overlay;
+				}
+				img{
+					width: 100%;
+					float: left;
+				}
+				.physicians_overlay{
+					@include transition(all 0.3s ease);
+					@include box-sizing(border-box);
+					width : 100%;
+					height : 100%;
+					// display : table-cell;
+					padding:10px;
+					opacity : 0;
+					position : absolute;
+					top : 0px;
+					left : 0px;
+					cursor : pointer;
+					p{
+						text-align : center;
+						margin-top : 43%;
+						padding-left : 5px;
+						padding-left : 5px;
+						color : $white;
+						@include proximaNovaBold(); 
+					}
+				}
+			}
+			.learn_more{
+				width : 40%;
+				background : $blueBoxes;
+				a{
+					text-decoration: none;
+				}
+				div{
+					p{
+						color : $white;
+						@include proximaNovaBold(); 
+						text-align : center;
+						line-height: 25px;
+						padding-top: 20%;
+						span{
+							display: block;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/*=========MEDIA QUERIES=========*/
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-width : 769px) and (max-width : 1024px) {
+	.physicians_left, .physicians_right{
+		display:none;
+	}
+}
+
+/* Samsungs 3,4,5 and iPhones 5, 6, and 6+ ----------- */
+@media screen and (max-width : 768px){
+	article.five_reasons{
+		margin-bottom: 40px;
+		section.reasons_title{
+			h3{
+				font-size: 1.6em;
+				padding-top: 30px;
+				padding-bottom: 30px;
+			}
+		}
+		div.reasons_headers{
+			margin-top: 70px;
+		}
+		div.reasons_content{
+			h4{
+				margin-bottom: 20px;
+			}
+		}
+		section.leaders{
+			overflow:auto;
+			div.physicians{
+				width: 100%;
+			}
+			ul{
+				overflow: hidden;
+				@include box-sizing(border-box);
+				.physicians_left, .physicians_right{
+					display:none;
+				}
+				li{
+					width: 33.3333%;
+					.physicians_overlay{
+						background : $physiciansImg_overlay;
+						height : 15%;
+						padding: 10px;
+						opacity : 1;
+						top : 86%;
+						left : 0px;
+
+						p{
+							margin-top : 0px;
+							line-height: 15px;
+							font-size: 0.8em;
+							letter-spacing: 1.1px;
+						}
+					}	
+				}
+				li.learn_more{
+					width: 66.666%;
+				}
+				li.learn_more{
+					div{
+						p{
+							padding-top: 20%;
+							padding-left: 10px;
+							padding-right: 10px;
+							font-size: 1em;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width : 600px){
+	article.five_reasons{
+		section.leaders {
+			ul{
+				li{
+					.physicians_overlay{
+						p{
+							font-size: 0.6em;
+							line-height: 10px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media screen and (max-width : 480px){
+	article.five_reasons{
+		margin-bottom: 40px;
+		section.reasons_title{
+			h3{
+				font-size: 1.6em;
+				padding-top: 30px;
+				padding-bottom: 30px;
+			}
+		}
+		div.reasons_headers{
+			margin-top: 70px;
+		}
+		div.reasons_content{
+			h4{
+				margin-bottom: 20px;
+			}
+		}
+		section.leaders {
+			overflow:hidden;
+			position: relative;
+			.physicians_left, .physicians_right{
+				display: inline-block;
+				padding:30px 30px;
+				background: $chevron_background;
+				cursor: pointer;
+				@include transition(all 0.2s ease);
+				z-index: 10;
+				// &:hover{
+				// 	background: $chevron_backgroundHover;
+				// }
+			}
+			.physicians_left{
+				position: absolute;
+				top: 54%;
+				left: 0px;
+				background: rgba(157, 157, 157, 0.5);
+			}
+			.physicians_right{
+				position: absolute;
+				top: 54%;
+				right: 0px;
+			}
+			div.physicians{
+				width: 200%;
+			}
+			ul{
+				overflow: hidden;
+				li{
+					width: 25%;
+					.physicians_overlay{
+						background : $physiciansImg_overlay;
+						height : 15%;
+						padding: 10px;
+						opacity : 1;
+						top : 85%;
+						left : 0px;
+
+						p{
+							margin-top : 0px;
+							line-height: 15px;
+							font-size: 0.8em;
+							letter-spacing: 1.1px;
+						}
+					}
+				}
+				li.learn_more{
+					width: 25%;
+					div{
+						p{
+							padding-top: 40%;
+							padding-left: 10px;
+							padding-right: 10px;
+							font-size: 1em;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width : 320px){
+	article.five_reasons{
+		section.leaders {
+			ul{
+				li{
+					.physicians_overlay{
+						top : 80%;
+						height: 50px;
+						padding-top: 7px;
+						p{
+							line-height: 17px;
+							font-size: 0.6em;
+						}
+					}
+				}
+				li.learn_more{
+					div{
+						p{
+							padding-top: 27%;
+						
+						}
+					}
+				}
+			}
+			overflow:hidden;
+			position: relative;
+			.physicians_left{
+				position: absolute;
+				top: 63.5%;
+				padding:20px;
+			}
+			.physicians_right{
+				position: absolute;
+				top: 63.5%;
+				padding:20px;
+			}
+		}
+	}
+}
+

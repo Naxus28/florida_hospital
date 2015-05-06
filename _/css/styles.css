@@ -1,0 +1,2422 @@
+/*********************************
+Date: 02/09/2014
+Developer: Gabriel Ferraz
+Company: Purple Rock Scissors
+Project: Florida Hospital
+**********************************/
+@import url("http://fonts.googleapis.com/css?family=Arvo");
+/* line 5, ../../../../../../.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/**********COLORS**********/
+/**********FONTS**********/
+/**********FONTS**********/
+/*****ANTI ALIASING*****/
+/*=========GLOBAL STYLES=========*/
+/* line 3, ../components/sass/3.partials/_base.scss */
+body {
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 8, ../components/sass/3.partials/_base.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 800;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+/* line 11, ../components/sass/3.partials/_base.scss */
+h2 {
+  color: #0a3a60;
+  font-size: 2.3em;
+}
+
+/* line 15, ../components/sass/3.partials/_base.scss */
+h3 {
+  color: #0a3a60;
+  font-size: 1.8em;
+}
+
+/* line 19, ../components/sass/3.partials/_base.scss */
+h4 {
+  color: #1f8bc5;
+  font-family: Arvo, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5em;
+  text-transform: none;
+  margin-bottom: 10px;
+  line-height: 30px;
+}
+
+/* line 27, ../components/sass/3.partials/_base.scss */
+p {
+  color: #53585a;
+  line-height: 25px;
+  font-size: 1.1em;
+}
+
+/* line 32, ../components/sass/3.partials/_base.scss */
+span.event_date {
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  display: block;
+  margin-bottom: 0.8%;
+  color: #898989;
+}
+
+/* line 39, ../components/sass/3.partials/_base.scss */
+span.event_name {
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.4em;
+  display: block;
+  margin-bottom: 0.8%;
+  color: #0b3a5f;
+  line-height: 25px;
+}
+
+/* line 47, ../components/sass/3.partials/_base.scss */
+span.italics {
+  font-family: Arvo, serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 0.875em;
+  display: block;
+  color: #888888;
+  line-height: 20px;
+}
+
+/* line 54, ../components/sass/3.partials/_base.scss */
+a.button {
+  font-weight: 800;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 0.750em;
+  text-decoration: none;
+  background: #1f8bc5;
+  display: inline-block;
+  width: 100px;
+  padding: 15px;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* line 66, ../components/sass/3.partials/_base.scss */
+div.event_nameDate {
+  float: left;
+  width: 80%;
+}
+
+/* line 70, ../components/sass/3.partials/_base.scss */
+div.event_button {
+  float: right;
+  width: 20%;
+  margin-top: 15px;
+}
+/* line 74, ../components/sass/3.partials/_base.scss */
+div.event_button a.button {
+  float: right;
+}
+
+/*********************************
+Standard Media queries break points
+(Use for reference only)
+http://responsivedesign.is/develop/browser-feature-support/media-queries-for-common-device-breakpoints
+*********************************/
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */
+}
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  /* Styles */
+}
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  /* Styles */
+}
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles */
+}
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* Styles */
+}
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* Styles */
+}
+/**********
+iPad 3
+**********/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  /* Styles */
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  /* Styles */
+}
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  /* Styles */
+}
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  /* Styles */
+}
+/* iPhone 4 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  /* Styles */
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  /* Styles */
+}
+/* iPhone 5 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
+}
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
+}
+/* iPhone 6 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
+}
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
+}
+/* iPhone 6+ ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
+}
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
+}
+/* Samsung Galaxy S3 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
+}
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
+}
+/* Samsung Galaxy S4 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */
+}
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */
+}
+/* Samsung Galaxy S5 ----------- */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */
+}
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */
+}
+/********************
+ *  GLOBAL LAYOUTS  *
+ ********************/
+/*=========ARTICLES/SECTIONS=========*/
+/* line 180, ../components/sass/3.partials/_layout.scss */
+article.five_reasons {
+  margin-bottom: 70px;
+}
+
+/* line 183, ../components/sass/3.partials/_layout.scss */
+article.resources {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+/* line 188, ../components/sass/3.partials/_layout.scss */
+header, article.five_reasons section.reasons_title, .reasons_wrapper, article.resources, article.ideas div h2 {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* line 193, ../components/sass/3.partials/_layout.scss */
+div.reasons_headers, div.reasons_content {
+  float: left;
+  width: 50%;
+  padding-top: 140px;
+}
+
+/* line 200, ../components/sass/3.partials/_layout.scss */
+article.ideas section.ideas_heading {
+  padding-bottom: 50px;
+}
+
+/* line 205, ../components/sass/3.partials/_layout.scss */
+footer {
+  display: none;
+  font-weight: 800;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #eeeeee;
+  padding: 20px 15px;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+/*=========MEDIA QUERIES=========*/
+/* Samsungs 3,4,5 and iPhones 5, 6, and 6+ ----------- */
+@media screen and (max-width: 768px) {
+  /* line 218, ../components/sass/3.partials/_layout.scss */
+  header, article.five_reasons section.reasons_title, .reasons_wrapper, article.ideas div h2 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* line 222, ../components/sass/3.partials/_layout.scss */
+  div.reasons_headers, div.reasons_content, article.resources section.resources_headings div {
+    float: none;
+    width: 100%;
+    padding-top: 20px;
+    margin-top: 0;
+  }
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media screen and (max-width: 480px) {
+  /* line 232, ../components/sass/3.partials/_layout.scss */
+  header, article.five_reasons section.reasons_title, .reasons_wrapper, article.ideas div h2 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* line 236, ../components/sass/3.partials/_layout.scss */
+  div.reasons_headers, div.reasons_content, article.resources section.resources_headings div {
+    float: none;
+    width: 100%;
+    padding-top: 20px;
+    margin-top: 0;
+  }
+}
+/* line 1, ../components/sass/4.articles/_404.scss */
+.error_wrapper {
+  background: url("../../images/resources/404_image.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+/* line 6, ../components/sass/4.articles/_404.scss */
+.error_wrapper h2 {
+  padding-top: 180px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 5em;
+  color: #ffffff;
+}
+/* line 13, ../components/sass/4.articles/_404.scss */
+.error_wrapper p.headline {
+  text-align: center;
+  margin-top: 20px;
+  font-family: Arvo, serif;
+  font-style: italic;
+  font-size: 2em;
+  color: #ffffff;
+}
+/* line 21, ../components/sass/4.articles/_404.scss */
+.error_wrapper p.button {
+  text-align: center;
+  margin-top: 50px;
+}
+/* line 24, ../components/sass/4.articles/_404.scss */
+.error_wrapper p.button a {
+  background: #ffffff;
+  color: #0a3a60;
+  font-size: 1.3em;
+  padding: 15px 60px;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-style: bold;
+  border: 1px solid #91cff4;
+}
+
+/* line 1, ../components/sass/4.articles/_contact.scss */
+article.contact_wrapper {
+  background: url("../../images/resources/contact_image.jpg") no-repeat center center;
+  background-size: cover;
+}
+/* line 4, ../components/sass/4.articles/_contact.scss */
+article.contact_wrapper section.contact {
+  padding-top: 140px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+/* line 8, ../components/sass/4.articles/_contact.scss */
+article.contact_wrapper section.contact p {
+  color: #ffffff;
+}
+/* line 14, ../components/sass/4.articles/_contact.scss */
+article.contact_wrapper section.contact div {
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 18, ../components/sass/4.articles/_contact.scss */
+article.contact_wrapper section.contact div p:first-child {
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 1em;
+  text-align: center;
+  letter-spacing: 1.1px;
+}
+/* line 25, ../components/sass/4.articles/_contact.scss */
+article.contact_wrapper section.contact div p:nth-child(2) {
+  display: block;
+  font-weight: 800;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 2.6em;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 2px;
+}
+/* line 33, ../components/sass/4.articles/_contact.scss */
+article.contact_wrapper section.contact div p:nth-child(3) {
+  width: 80%;
+  margin: 20px auto 0;
+  font-size: 1.1em;
+  font-family: Arvo, serif;
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+  letter-spacing: 0.1px;
+  line-height: 27px;
+}
+/* line 42, ../components/sass/4.articles/_contact.scss */
+article.contact_wrapper section.contact div a.button {
+  background: rgba(250, 250, 250, 0);
+  border: 1px solid #91cff4;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+
+/*=========MEDIA QUERIES=========*/
+/* iPads (portrait and landscape) ----------- */
+/* Samsungs 3,4,5 and iPhones 5, 6, and 6+ ----------- */
+@media screen and (max-width: 768px) {
+  /* line 64, ../components/sass/4.articles/_contact.scss */
+  article.contact_wrapper section.contact {
+    padding-top: 80px;
+  }
+  /* line 67, ../components/sass/4.articles/_contact.scss */
+  article.contact_wrapper section.contact p span {
+    display: inline;
+  }
+  /* line 71, ../components/sass/4.articles/_contact.scss */
+  article.contact_wrapper section.contact div {
+    width: 100%;
+    margin: 20px 0 0;
+  }
+  /* line 74, ../components/sass/4.articles/_contact.scss */
+  article.contact_wrapper section.contact div p:first-child {
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+  /* line 80, ../components/sass/4.articles/_contact.scss */
+  article.contact_wrapper section.contact div p:nth-child(2) {
+    display: block;
+    font-weight: 800;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    line-height: 35px;
+    letter-spacing: 1.2px;
+  }
+  /* line 87, ../components/sass/4.articles/_contact.scss */
+  article.contact_wrapper section.contact div p:nth-child(3) {
+    width: 90%;
+    margin-top: 20px;
+    font-size: 1.1em;
+    font-family: Arvo, serif;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    letter-spacing: 0.1px;
+    line-height: 27px;
+  }
+  /* line 96, ../components/sass/4.articles/_contact.scss */
+  article.contact_wrapper section.contact div a.button {
+    background: rgba(250, 250, 250, 0);
+    border: 1px solid #91cff4;
+    margin-top: 40px;
+    margin-bottom: 100px;
+  }
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media screen and (max-width: 480px) {
+  /* line 110, ../components/sass/4.articles/_contact.scss */
+  article.contact_wrapper section.contact {
+    padding-top: 80px;
+  }
+  /* line 113, ../components/sass/4.articles/_contact.scss */
+  article.contact_wrapper section.contact p span {
+    display: inline;
+  }
+  /* line 117, ../components/sass/4.articles/_contact.scss */
+  article.contact_wrapper section.contact div {
+    width: 100%;
+    margin: 20px 0 0;
+  }
+  /* line 120, ../components/sass/4.articles/_contact.scss */
+  article.contact_wrapper section.contact div p:first-child {
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+  /* line 126, ../components/sass/4.articles/_contact.scss */
+  article.contact_wrapper section.contact div p:nth-child(2) {
+    display: block;
+    font-weight: 800;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    line-height: 35px;
+    letter-spacing: 1.2px;
+  }
+  /* line 133, ../components/sass/4.articles/_contact.scss */
+  article.contact_wrapper section.contact div p:nth-child(3) {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 1.1em;
+    font-family: Arvo, serif;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    letter-spacing: 0.1px;
+    line-height: 27px;
+  }
+  /* line 142, ../components/sass/4.articles/_contact.scss */
+  article.contact_wrapper section.contact div a.button {
+    background: rgba(250, 250, 250, 0);
+    border: 1px solid #91cff4;
+    margin-top: 40px;
+    margin-bottom: 100px;
+  }
+}
+/*=========ARTICLE EDUCATION LAYOUT=========*/
+/* line 2, ../components/sass/4.articles/_education.scss */
+article.education_wrapper {
+  margin-top: 70px;
+}
+/* line 4, ../components/sass/4.articles/_education.scss */
+article.education_wrapper section.education {
+  overflow: hidden;
+  *zoom: 1;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 60px;
+}
+/* line 9, ../components/sass/4.articles/_education.scss */
+article.education_wrapper section.education div {
+  width: 50%;
+  float: left;
+}
+/* line 14, ../components/sass/4.articles/_education.scss */
+article.education_wrapper div.video {
+  position: relative;
+}
+/* line 16, ../components/sass/4.articles/_education.scss */
+article.education_wrapper div.video video {
+  width: 100%;
+}
+/* line 19, ../components/sass/4.articles/_education.scss */
+article.education_wrapper div.video div.play_button {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -35px;
+  margin-top: -35px;
+  z-index: 10;
+}
+/* line 28, ../components/sass/4.articles/_education.scss */
+article.education_wrapper div.video div.play_button img {
+  max-width: 100%;
+}
+/* line 32, ../components/sass/4.articles/_education.scss */
+article.education_wrapper div.video div.video_tag {
+  width: 240px;
+  height: 20px;
+  margin-left: -120px;
+  padding-top: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+/* line 42, ../components/sass/4.articles/_education.scss */
+article.education_wrapper div.video_conference_info {
+  padding: 40px 30px 30px;
+  padding-bottom: 160px;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 46, ../components/sass/4.articles/_education.scss */
+article.education_wrapper div.video_conference_info div {
+  float: left;
+}
+/* line 48, ../components/sass/4.articles/_education.scss */
+article.education_wrapper div.video_conference_info div:first-child {
+  width: 48%;
+}
+/* line 51, ../components/sass/4.articles/_education.scss */
+article.education_wrapper div.video_conference_info div:nth-child(2) {
+  width: 52%;
+}
+/* line 55, ../components/sass/4.articles/_education.scss */
+article.education_wrapper div.video_conference_info div:nth-child(2) {
+  text-align: right;
+}
+/* line 57, ../components/sass/4.articles/_education.scss */
+article.education_wrapper div.video_conference_info div:nth-child(2) a.button {
+  margin-top: 5px;
+  width: auto;
+}
+
+/*=========ARTICLE EDUCATION STYLES=========*/
+/* line 67, ../components/sass/4.articles/_education.scss */
+article.education_wrapper div.play_button {
+  opacity: 0.65;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+/* line 70, ../components/sass/4.articles/_education.scss */
+article.education_wrapper div.play_button:hover {
+  opacity: 1;
+}
+/* line 73, ../components/sass/4.articles/_education.scss */
+article.education_wrapper div.play_button:hover {
+  cursor: pointer;
+}
+/* line 77, ../components/sass/4.articles/_education.scss */
+article.education_wrapper div.video_tag {
+  color: #ffffff;
+  font-weight: 800;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  text-align: center;
+  line-height: 25px;
+  letter-spacing: 1.1px;
+}
+/* line 86, ../components/sass/4.articles/_education.scss */
+article.education_wrapper div.video_conference_info p {
+  font-family: Arvo, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1em;
+  color: #0b3a5f;
+}
+
+/*=========MEDIA QUERIES=========*/
+/* iPads (portrait and landscape) ----------- */
+/* Samsungs 3,4,5 and iPhones 5, 6, and 6+ ----------- */
+@media screen and (max-width: 768px) {
+  /* line 105, ../components/sass/4.articles/_education.scss */
+  article.education_wrapper {
+    margin-top: 70px;
+  }
+  /* line 107, ../components/sass/4.articles/_education.scss */
+  article.education_wrapper h2 {
+    margin-bottom: 35px;
+  }
+  /* line 110, ../components/sass/4.articles/_education.scss */
+  article.education_wrapper section.education {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 35px;
+  }
+  /* line 115, ../components/sass/4.articles/_education.scss */
+  article.education_wrapper section.education div {
+    width: 100%;
+    float: none;
+  }
+  /* line 120, ../components/sass/4.articles/_education.scss */
+  article.education_wrapper div.video {
+    position: relative;
+  }
+  /* line 122, ../components/sass/4.articles/_education.scss */
+  article.education_wrapper div.video video {
+    width: 100%;
+  }
+  /* line 125, ../components/sass/4.articles/_education.scss */
+  article.education_wrapper div.video div.play_button {
+    left: 50%;
+    top: 40%;
+    margin-left: -35px;
+    margin-top: -35px;
+    z-index: 10;
+  }
+  /* line 132, ../components/sass/4.articles/_education.scss */
+  article.education_wrapper div.video div.video_tag {
+    top: 40%;
+    left: 50%;
+  }
+  /* line 137, ../components/sass/4.articles/_education.scss */
+  article.education_wrapper div.video_conference_info {
+    padding: 40px 15px 30px;
+    padding-bottom: 45px;
+    overflow: hidden;
+    *zoom: 1;
+  }
+  /* line 141, ../components/sass/4.articles/_education.scss */
+  article.education_wrapper div.video_conference_info div {
+    float: none;
+  }
+  /* line 143, ../components/sass/4.articles/_education.scss */
+  article.education_wrapper div.video_conference_info div:first-child {
+    width: 100%;
+  }
+  /* line 146, ../components/sass/4.articles/_education.scss */
+  article.education_wrapper div.video_conference_info div:nth-child(2) {
+    width: 100%;
+  }
+  /* line 150, ../components/sass/4.articles/_education.scss */
+  article.education_wrapper div.video_conference_info div:nth-child(2) {
+    text-align: left;
+  }
+  /* line 152, ../components/sass/4.articles/_education.scss */
+  article.education_wrapper div.video_conference_info div:nth-child(2) a.button {
+    margin-top: 40px;
+    width: auto;
+  }
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media screen and (max-width: 480px) {
+  /* line 163, ../components/sass/4.articles/_education.scss */
+  article.education_wrapper {
+    margin-top: 70px;
+  }
+  /* line 165, ../components/sass/4.articles/_education.scss */
+  article.education_wrapper h2 {
+    margin-bottom: 35px;
+  }
+  /* line 168, ../components/sass/4.articles/_education.scss */
+  article.education_wrapper section.education {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 35px;
+  }
+  /* line 173, ../components/sass/4.articles/_education.scss */
+  article.education_wrapper section.education div {
+    width: 100%;
+    float: none;
+  }
+  /* line 178, ../components/sass/4.articles/_education.scss */
+  article.education_wrapper div.video {
+    position: relative;
+  }
+  /* line 180, ../components/sass/4.articles/_education.scss */
+  article.education_wrapper div.video video {
+    width: 100%;
+  }
+  /* line 183, ../components/sass/4.articles/_education.scss */
+  article.education_wrapper div.video div.play_button {
+    left: 50%;
+    top: 40%;
+    margin-left: -35px;
+    margin-top: -35px;
+    z-index: 10;
+  }
+  /* line 190, ../components/sass/4.articles/_education.scss */
+  article.education_wrapper div.video div.video_tag {
+    top: 40%;
+    left: 50%;
+  }
+  /* line 195, ../components/sass/4.articles/_education.scss */
+  article.education_wrapper div.video_conference_info {
+    padding: 40px 15px 30px;
+    padding-bottom: 45px;
+    overflow: hidden;
+    *zoom: 1;
+  }
+  /* line 199, ../components/sass/4.articles/_education.scss */
+  article.education_wrapper div.video_conference_info div {
+    float: none;
+  }
+  /* line 201, ../components/sass/4.articles/_education.scss */
+  article.education_wrapper div.video_conference_info div:first-child {
+    width: 100%;
+  }
+  /* line 204, ../components/sass/4.articles/_education.scss */
+  article.education_wrapper div.video_conference_info div:nth-child(2) {
+    width: 100%;
+  }
+  /* line 208, ../components/sass/4.articles/_education.scss */
+  article.education_wrapper div.video_conference_info div:nth-child(2) {
+    text-align: left;
+  }
+  /* line 210, ../components/sass/4.articles/_education.scss */
+  article.education_wrapper div.video_conference_info div:nth-child(2) a.button {
+    margin-top: 40px;
+    width: auto;
+  }
+}
+/*=========ARTICLE EVENTS LAYOUT=========*/
+/* line 2, ../components/sass/4.articles/_events.scss */
+article.events {
+  clear: both;
+  padding-top: 70px;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 7, ../components/sass/4.articles/_events.scss */
+article.events section:nth-child(1) {
+  padding-bottom: 60px;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 10, ../components/sass/4.articles/_events.scss */
+article.events section:nth-child(1) div {
+  width: 50%;
+  float: left;
+}
+/* line 15, ../components/sass/4.articles/_events.scss */
+article.events section:nth-child(2) {
+  padding-bottom: 60px;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 18, ../components/sass/4.articles/_events.scss */
+article.events section:nth-child(2) div {
+  float: left;
+}
+/* line 21, ../components/sass/4.articles/_events.scss */
+article.events section:nth-child(2) div:nth-child(1) {
+  padding-right: 4%;
+  width: 40%;
+}
+/* line 24, ../components/sass/4.articles/_events.scss */
+article.events section:nth-child(2) div:nth-child(1) span.featured_event_header {
+  margin-bottom: 30px;
+}
+/* line 27, ../components/sass/4.articles/_events.scss */
+article.events section:nth-child(2) div:nth-child(1) img {
+  width: 100%;
+}
+/* line 31, ../components/sass/4.articles/_events.scss */
+article.events section:nth-child(2) div:nth-child(2) {
+  width: 56%;
+  max-height: 100%;
+}
+/* line 34, ../components/sass/4.articles/_events.scss */
+article.events section:nth-child(2) div:nth-child(2) span.event_date {
+  margin-top: 42px;
+}
+/* line 37, ../components/sass/4.articles/_events.scss */
+article.events section:nth-child(2) div:nth-child(2) span.event_name {
+  padding: 2% 0;
+}
+/* line 40, ../components/sass/4.articles/_events.scss */
+article.events section:nth-child(2) div:nth-child(2) a.button, article.events section:nth-child(2) div:nth-child(2) span {
+  display: block;
+}
+/* line 44, ../components/sass/4.articles/_events.scss */
+article.events section:nth-child(2) div:nth-child(2) span span {
+  display: block;
+  line-height: 25px;
+}
+/* line 49, ../components/sass/4.articles/_events.scss */
+article.events section:nth-child(2) div:nth-child(2) p.event_description {
+  font-weight: 400;
+  font-style: normal;
+  color: #0a3a60;
+  font-size: 0.8em;
+  line-height: 20px;
+  margin: 3.6% 0;
+}
+/* line 58, ../components/sass/4.articles/_events.scss */
+article.events section.upcoming_events {
+  padding: 3% 3% 0 0;
+  width: 100%;
+}
+/* line 61, ../components/sass/4.articles/_events.scss */
+article.events section.upcoming_events h3 {
+  margin-bottom: 3%;
+  padding-left: 30px;
+}
+/* line 65, ../components/sass/4.articles/_events.scss */
+article.events section.upcoming_events div + a.button {
+  margin: 30px 0px 70px 30px;
+}
+/* line 68, ../components/sass/4.articles/_events.scss */
+article.events section.upcoming_events div.upcoming_events_wrapper {
+  display: table;
+  border-collapse: separate;
+  border-spacing: 30px 0px;
+  width: 100%;
+}
+/* line 73, ../components/sass/4.articles/_events.scss */
+article.events section.upcoming_events div.upcoming_events_wrapper div {
+  overflow: hidden;
+  height: 240px;
+  position: relative;
+  display: table-cell;
+  width: 21.3333%;
+  padding: 30px;
+}
+/* line 80, ../components/sass/4.articles/_events.scss */
+article.events section.upcoming_events div.upcoming_events_wrapper div span.event_date, article.events section.upcoming_events div.upcoming_events_wrapper div span.event_name {
+  margin-bottom: 18px;
+}
+/* line 83, ../components/sass/4.articles/_events.scss */
+article.events section.upcoming_events div.upcoming_events_wrapper div a.button {
+  position: absolute;
+  bottom: 30px;
+  background: #ffffff;
+  color: #0b3a5f;
+  border: 1px solid #91cff4;
+}
+
+/*=========ARTICLE EVENTS STYLES=========*/
+/* line 96, ../components/sass/4.articles/_events.scss */
+article.events {
+  background: #fafafa;
+}
+/* line 98, ../components/sass/4.articles/_events.scss */
+article.events section:nth-child(1), article.events section:nth-child(2) {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+/* line 104, ../components/sass/4.articles/_events.scss */
+article.events span.featured_event_header {
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 0.875em;
+  display: block;
+  margin-bottom: 0.8%;
+  color: #0a3a60;
+}
+/* line 113, ../components/sass/4.articles/_events.scss */
+article.events section.upcoming_events {
+  background: #eff6f9;
+}
+/* line 115, ../components/sass/4.articles/_events.scss */
+article.events section.upcoming_events div.upcoming_events_wrapper {
+  background: #eff6f9;
+}
+/* line 118, ../components/sass/4.articles/_events.scss */
+article.events section.upcoming_events h3 {
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 0.875em;
+  color: #0a3a60;
+}
+/* line 125, ../components/sass/4.articles/_events.scss */
+article.events section.upcoming_events div {
+  background: #ffffff;
+}
+
+/*=========MEDIA QUERIES=========*/
+/* Desktops and laptops ----------- */
+@media screen and (min-width: 1224px) {
+  /* line 143, ../components/sass/4.articles/_events.scss */
+  article.events section:nth-child(2) div:nth-child(2) span.event_date {
+    font-size: 0.9em;
+  }
+  /* line 146, ../components/sass/4.articles/_events.scss */
+  article.events section:nth-child(2) div:nth-child(2) span.event_name {
+    font-size: 1.6em;
+  }
+  /* line 149, ../components/sass/4.articles/_events.scss */
+  article.events section:nth-child(2) div:nth-child(2) span.italics {
+    font-size: 1em;
+  }
+  /* line 152, ../components/sass/4.articles/_events.scss */
+  article.events section:nth-child(2) div:nth-child(2) p.event_description {
+    font-size: 1em;
+    line-height: 25px;
+    margin-top: 30px;
+  }
+  /* line 157, ../components/sass/4.articles/_events.scss */
+  article.events section:nth-child(2) div:nth-child(2) a.button {
+    margin-top: 54px;
+  }
+}
+/* iPads (landscape) ----------- */
+@media screen and (max-width: 1024px) {
+  /* line 174, ../components/sass/4.articles/_events.scss */
+  article.events section:nth-child(2) div:nth-child(2) p.event_description {
+    margin-top: 4.9%;
+    margin-bottom: 4.9%;
+  }
+}
+/* iPads (portrait and landscape) ----------- */
+@media screen and (max-width: 800px) {
+  /* line 186, ../components/sass/4.articles/_events.scss */
+  article.events section:nth-child(2) div:nth-child(1) {
+    padding-right: 4%;
+    width: 46%;
+  }
+  /* line 190, ../components/sass/4.articles/_events.scss */
+  article.events section:nth-child(2) div:nth-child(2) {
+    width: 50%;
+  }
+  /* line 192, ../components/sass/4.articles/_events.scss */
+  article.events section:nth-child(2) div:nth-child(2) span.event_name {
+    padding: 1.5% 0;
+  }
+  /* line 195, ../components/sass/4.articles/_events.scss */
+  article.events section:nth-child(2) div:nth-child(2) p.event_description {
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 790px) {
+  /* line 207, ../components/sass/4.articles/_events.scss */
+  article.events section.upcoming_events div.upcoming_events_wrapper div {
+    height: 270px;
+  }
+}
+/* Samsungs 3,4,5 and iPhones 5, 6, and 6+ ----------- */
+@media screen and (max-width: 768px) {
+  /* line 217, ../components/sass/4.articles/_events.scss */
+  article.events {
+    padding-top: 35px;
+  }
+  /* line 219, ../components/sass/4.articles/_events.scss */
+  article.events section:nth-child(1) {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 40px;
+  }
+  /* line 223, ../components/sass/4.articles/_events.scss */
+  article.events section:nth-child(1) div {
+    width: 100%;
+    float: none;
+  }
+  /* line 226, ../components/sass/4.articles/_events.scss */
+  article.events section:nth-child(1) div:first-child {
+    margin-bottom: 20px;
+  }
+  /* line 231, ../components/sass/4.articles/_events.scss */
+  article.events section:nth-child(2) {
+    padding-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* line 235, ../components/sass/4.articles/_events.scss */
+  article.events section:nth-child(2) div {
+    float: none;
+  }
+  /* line 238, ../components/sass/4.articles/_events.scss */
+  article.events section:nth-child(2) div:nth-child(1) {
+    padding-right: 4%;
+    width: 100%;
+  }
+  /* line 241, ../components/sass/4.articles/_events.scss */
+  article.events section:nth-child(2) div:nth-child(1) span.featured_event_header {
+    margin-bottom: 20px;
+  }
+  /* line 244, ../components/sass/4.articles/_events.scss */
+  article.events section:nth-child(2) div:nth-child(1) img {
+    width: 100%;
+  }
+  /* line 248, ../components/sass/4.articles/_events.scss */
+  article.events section:nth-child(2) div:nth-child(2) {
+    width: 100%;
+    max-height: 100%;
+  }
+  /* line 251, ../components/sass/4.articles/_events.scss */
+  article.events section:nth-child(2) div:nth-child(2) span.event_date {
+    margin-top: 42px;
+    font-size: 0.9em;
+  }
+  /* line 255, ../components/sass/4.articles/_events.scss */
+  article.events section:nth-child(2) div:nth-child(2) span.event_name {
+    padding: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  /* line 261, ../components/sass/4.articles/_events.scss */
+  article.events section:nth-child(2) div:nth-child(2) span.italics {
+    margin-top: 0px;
+  }
+  /* line 265, ../components/sass/4.articles/_events.scss */
+  article.events section:nth-child(2) div:nth-child(2) a.button {
+    display: block;
+    margin-top: 40px;
+  }
+  /* line 269, ../components/sass/4.articles/_events.scss */
+  article.events section:nth-child(2) div:nth-child(2) span {
+    line-height: 25px;
+  }
+  /* line 272, ../components/sass/4.articles/_events.scss */
+  article.events section:nth-child(2) div:nth-child(2) p.event_description {
+    font-size: 1em;
+    line-height: 25px;
+    margin-top: 20px;
+  }
+  /* line 279, ../components/sass/4.articles/_events.scss */
+  article.events section.upcoming_events {
+    overflow: hidden;
+    *zoom: 1;
+    padding: 0;
+    display: block;
+    float: none;
+  }
+  /* line 285, ../components/sass/4.articles/_events.scss */
+  article.events section.upcoming_events h3 {
+    padding: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  /* line 290, ../components/sass/4.articles/_events.scss */
+  article.events section.upcoming_events div + a.button {
+    margin: 20px 0px 70px 15px;
+  }
+  /* line 294, ../components/sass/4.articles/_events.scss */
+  article.events section.upcoming_events div.upcoming_events_wrapper {
+    display: block;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    *zoom: 1;
+  }
+  /* line 301, ../components/sass/4.articles/_events.scss */
+  article.events section.upcoming_events div.upcoming_events_wrapper div {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 240px;
+    position: relative;
+    float: none;
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+    padding: 30px;
+  }
+  /* line 311, ../components/sass/4.articles/_events.scss */
+  article.events section.upcoming_events div.upcoming_events_wrapper div:first-child {
+    margin-top: 0;
+  }
+  /* line 314, ../components/sass/4.articles/_events.scss */
+  article.events section.upcoming_events div.upcoming_events_wrapper div span.event_date, article.events section.upcoming_events div.upcoming_events_wrapper div span.event_name {
+    margin-bottom: 18px;
+  }
+  /* line 317, ../components/sass/4.articles/_events.scss */
+  article.events section.upcoming_events div.upcoming_events_wrapper div a.button {
+    position: absolute;
+    bottom: 30px;
+    background: #ffffff;
+    color: #0b3a5f;
+    border: 1px solid #91cff4;
+  }
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media screen and (max-width: 480px) {
+  /* line 332, ../components/sass/4.articles/_events.scss */
+  article.events {
+    padding-top: 35px;
+  }
+  /* line 334, ../components/sass/4.articles/_events.scss */
+  article.events section:nth-child(1) {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 40px;
+  }
+  /* line 338, ../components/sass/4.articles/_events.scss */
+  article.events section:nth-child(1) div {
+    width: 100%;
+    float: none;
+  }
+  /* line 341, ../components/sass/4.articles/_events.scss */
+  article.events section:nth-child(1) div:first-child {
+    margin-bottom: 20px;
+  }
+  /* line 346, ../components/sass/4.articles/_events.scss */
+  article.events section:nth-child(2) {
+    padding-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* line 350, ../components/sass/4.articles/_events.scss */
+  article.events section:nth-child(2) div {
+    float: none;
+  }
+  /* line 353, ../components/sass/4.articles/_events.scss */
+  article.events section:nth-child(2) div:nth-child(1) {
+    padding-right: 4%;
+    width: 100%;
+  }
+  /* line 356, ../components/sass/4.articles/_events.scss */
+  article.events section:nth-child(2) div:nth-child(1) span.featured_event_header {
+    margin-bottom: 20px;
+  }
+  /* line 359, ../components/sass/4.articles/_events.scss */
+  article.events section:nth-child(2) div:nth-child(1) img {
+    width: 100%;
+  }
+  /* line 363, ../components/sass/4.articles/_events.scss */
+  article.events section:nth-child(2) div:nth-child(2) {
+    width: 100%;
+    max-height: 100%;
+  }
+  /* line 366, ../components/sass/4.articles/_events.scss */
+  article.events section:nth-child(2) div:nth-child(2) span.event_date {
+    margin-top: 42px;
+    font-size: 0.9em;
+  }
+  /* line 370, ../components/sass/4.articles/_events.scss */
+  article.events section:nth-child(2) div:nth-child(2) span.event_name {
+    padding: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  /* line 376, ../components/sass/4.articles/_events.scss */
+  article.events section:nth-child(2) div:nth-child(2) span.italics {
+    margin-top: 0px;
+  }
+  /* line 380, ../components/sass/4.articles/_events.scss */
+  article.events section:nth-child(2) div:nth-child(2) a.button {
+    display: block;
+    margin-top: 40px;
+  }
+  /* line 384, ../components/sass/4.articles/_events.scss */
+  article.events section:nth-child(2) div:nth-child(2) span {
+    line-height: 25px;
+  }
+  /* line 387, ../components/sass/4.articles/_events.scss */
+  article.events section:nth-child(2) div:nth-child(2) p.event_description {
+    font-size: 1em;
+    line-height: 25px;
+    margin-top: 20px;
+  }
+  /* line 394, ../components/sass/4.articles/_events.scss */
+  article.events section.upcoming_events {
+    overflow: hidden;
+    *zoom: 1;
+    padding: 0;
+    display: block;
+    float: none;
+  }
+  /* line 400, ../components/sass/4.articles/_events.scss */
+  article.events section.upcoming_events h3 {
+    padding: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  /* line 405, ../components/sass/4.articles/_events.scss */
+  article.events section.upcoming_events div + a.button {
+    margin: 20px 0px 70px 15px;
+  }
+  /* line 409, ../components/sass/4.articles/_events.scss */
+  article.events section.upcoming_events div.upcoming_events_wrapper {
+    display: block;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    *zoom: 1;
+  }
+  /* line 416, ../components/sass/4.articles/_events.scss */
+  article.events section.upcoming_events div.upcoming_events_wrapper div {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 240px;
+    position: relative;
+    float: none;
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+    padding: 30px;
+  }
+  /* line 426, ../components/sass/4.articles/_events.scss */
+  article.events section.upcoming_events div.upcoming_events_wrapper div:first-child {
+    margin-top: 0;
+  }
+  /* line 429, ../components/sass/4.articles/_events.scss */
+  article.events section.upcoming_events div.upcoming_events_wrapper div span.event_date, article.events section.upcoming_events div.upcoming_events_wrapper div span.event_name {
+    margin-bottom: 18px;
+  }
+  /* line 432, ../components/sass/4.articles/_events.scss */
+  article.events section.upcoming_events div.upcoming_events_wrapper div a.button {
+    position: absolute;
+    bottom: 30px;
+    background: #ffffff;
+    color: #0b3a5f;
+    border: 1px solid #91cff4;
+  }
+}
+@media screen and (max-width: 320px) {
+  /* line 449, ../components/sass/4.articles/_events.scss */
+  article.events section.upcoming_events div.upcoming_events_wrapper div {
+    height: 290px;
+  }
+}
+/*=========MEDIA QUERIES=========*/
+/* iPads (portrait and landscape) ----------- */
+/* Samsungs 3,4,5 and iPhones 5, 6, and 6+ ----------- */
+@media screen and (max-width: 768px) {
+  /* line 10, ../components/sass/4.articles/_footer.scss */
+  footer {
+    display: block;
+  }
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media screen and (max-width: 480px) {
+  /* line 17, ../components/sass/4.articles/_footer.scss */
+  footer {
+    display: block;
+  }
+}
+/*=========HEADER LAYOUT=========*/
+/* line 2, ../components/sass/4.articles/_header.scss */
+header {
+  position: relative;
+  height: 100%;
+  padding-top: 25px;
+  overflow: hidden;
+  /*****ASIDE*****/
+}
+/* line 8, ../components/sass/4.articles/_header.scss */
+header div.branding ~ a ~ img {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+/* line 14, ../components/sass/4.articles/_header.scss */
+header aside.menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100%;
+  margin-right: 0;
+  background: #ccc;
+  -moz-transform: translate(100%, 0);
+  -ms-transform: translate(100%, 0);
+  -webkit-transform: translate(100%, 0);
+  transform: translate(100%, 0);
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+/* line 25, ../components/sass/4.articles/_header.scss */
+header aside.menu nav li {
+  padding: 20px;
+}
+
+/*=========HEADER STYLES=========*/
+/* line 33, ../components/sass/4.articles/_header.scss */
+header {
+  background: url("../../images/resources/hero_bg.jpg") no-repeat center center;
+  background-size: cover;
+}
+/* line 36, ../components/sass/4.articles/_header.scss */
+header h1 {
+  color: #0b3a5f;
+  font-size: 2.1em;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  float: left;
+  display: none;
+}
+/* line 45, ../components/sass/4.articles/_header.scss */
+header p {
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+  font-size: 0.750em;
+}
+/* line 50, ../components/sass/4.articles/_header.scss */
+header aside.menu {
+  background: #ffffff;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+/* line 54, ../components/sass/4.articles/_header.scss */
+header aside.menu ul {
+  margin-left: 20px;
+}
+/* line 57, ../components/sass/4.articles/_header.scss */
+header aside.menu .close_menu {
+  font-size: 1.4em;
+  color: #063a62;
+  margin-right: 20px;
+  text-align: right;
+}
+/* line 63, ../components/sass/4.articles/_header.scss */
+header aside.menu a {
+  text-decoration: none;
+  color: #979797;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+/* line 67, ../components/sass/4.articles/_header.scss */
+header aside.menu a:hover {
+  color: #063a62;
+}
+/* line 73, ../components/sass/4.articles/_header.scss */
+header .hero_message p:first-child {
+  width: 80%;
+  margin: 18% auto 0;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  text-align: center;
+  line-height: 40px;
+}
+/* line 80, ../components/sass/4.articles/_header.scss */
+header .hero_message p:first-child span {
+  display: block;
+  font-weight: 800;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 2.8em;
+  text-align: center;
+  line-height: 50px;
+}
+/* line 88, ../components/sass/4.articles/_header.scss */
+header .hero_message p:nth-child(2) {
+  font-size: 1.3em;
+  width: 70%;
+  margin: 20px auto 0;
+  font-family: Arvo, serif;
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+}
+/* line 94, ../components/sass/4.articles/_header.scss */
+header .hero_message p:nth-child(2) span {
+  display: block;
+  line-height: 30px;
+}
+/* line 100, ../components/sass/4.articles/_header.scss */
+header .open_menu, header .close_menu {
+  cursor: pointer;
+}
+/* line 103, ../components/sass/4.articles/_header.scss */
+header .registration_callOut {
+  width: 70%;
+  margin: 18% auto 1%;
+  padding: 20px 30px;
+  background: #e8ebed;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 110, ../components/sass/4.articles/_header.scss */
+header div.event_nameDate {
+  float: left;
+  width: 80%;
+}
+/* line 114, ../components/sass/4.articles/_header.scss */
+header div.event_button {
+  float: right;
+  width: 20%;
+  margin-top: 15px;
+}
+/* line 118, ../components/sass/4.articles/_header.scss */
+header div.event_button a.button {
+  float: right;
+}
+/* line 122, ../components/sass/4.articles/_header.scss */
+header span.italics {
+  margin-bottom: 0.8%;
+}
+/* line 125, ../components/sass/4.articles/_header.scss */
+header span.event_registration {
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  display: block;
+  color: #0a3a60;
+  padding-bottom: 3%;
+}
+
+/*=========MEDIA QUERIES=========*/
+/* iPads (portrait and landscape) ----------- */
+@media screen and (min-width: 1024px) {
+  /* line 140, ../components/sass/4.articles/_header.scss */
+  header .hero_message p:nth-child(2) {
+    width: 60%;
+  }
+}
+/* Samsungs 3, 4, 5 and iPhones 5, 6, and 6+ ----------- */
+@media screen and (max-width: 768px) {
+  /* line 149, ../components/sass/4.articles/_header.scss */
+  header {
+    padding-top: 20px;
+  }
+  /* line 151, ../components/sass/4.articles/_header.scss */
+  header div.branding ~ a ~ img {
+    right: 15px;
+    top: 20px;
+  }
+  /* line 155, ../components/sass/4.articles/_header.scss */
+  header aside.menu {
+    width: 200px;
+  }
+  /* line 159, ../components/sass/4.articles/_header.scss */
+  header .hero_message p:first-child {
+    font-size: 1.2em;
+    line-height: 25px;
+    width: 95%;
+    margin-top: 12%;
+  }
+  /* line 164, ../components/sass/4.articles/_header.scss */
+  header .hero_message p:first-child span {
+    margin-top: 10px;
+    font-size: 2.2em;
+    line-height: 45px;
+    letter-spacing: 1.2px;
+  }
+  /* line 171, ../components/sass/4.articles/_header.scss */
+  header .hero_message p:nth-child(2) {
+    margin-top: 10px;
+    font-size: 1.1em;
+    width: 80%;
+  }
+  /* line 177, ../components/sass/4.articles/_header.scss */
+  header .registration_callOut {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 80%;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+  }
+  /* line 183, ../components/sass/4.articles/_header.scss */
+  header div.event_nameDate {
+    float: none;
+    clear: both;
+    width: 100%;
+  }
+  /* line 188, ../components/sass/4.articles/_header.scss */
+  header div.event_button {
+    clear: both;
+    overflow: hidden;
+    *zoom: 1;
+    float: none;
+    width: 100%;
+    margin-top: 15px;
+  }
+  /* line 194, ../components/sass/4.articles/_header.scss */
+  header div.event_button a.button {
+    float: left;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* line 203, ../components/sass/4.articles/_header.scss */
+  header .hero_message p:first-child {
+    font-size: 1em;
+  }
+  /* line 205, ../components/sass/4.articles/_header.scss */
+  header .hero_message p:first-child span {
+    font-size: 2em;
+    line-height: 35px;
+  }
+  /* line 210, ../components/sass/4.articles/_header.scss */
+  header .hero_message p:nth-child(2) {
+    font-size: 0.9em;
+  }
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media screen and (max-width: 480px) {
+  /* line 219, ../components/sass/4.articles/_header.scss */
+  header {
+    padding-top: 20px;
+  }
+  /* line 221, ../components/sass/4.articles/_header.scss */
+  header div.branding ~ a ~ img {
+    right: 15px;
+    top: 20px;
+  }
+  /* line 225, ../components/sass/4.articles/_header.scss */
+  header aside.menu {
+    width: 200px;
+  }
+  /* line 229, ../components/sass/4.articles/_header.scss */
+  header .hero_message p:first-child {
+    font-size: 1.2em;
+    line-height: 25px;
+    width: 95%;
+    margin-top: 12%;
+  }
+  /* line 234, ../components/sass/4.articles/_header.scss */
+  header .hero_message p:first-child span {
+    margin-top: 10px;
+    font-size: 1.8em;
+    line-height: 35px;
+    letter-spacing: 1.2px;
+  }
+  /* line 241, ../components/sass/4.articles/_header.scss */
+  header .hero_message p:nth-child(2) {
+    margin-top: 10px;
+    font-size: 0.9em;
+    width: 80%;
+  }
+  /* line 247, ../components/sass/4.articles/_header.scss */
+  header .registration_callOut {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+  }
+  /* line 253, ../components/sass/4.articles/_header.scss */
+  header div.event_nameDate {
+    float: none;
+    clear: both;
+    width: 100%;
+  }
+  /* line 258, ../components/sass/4.articles/_header.scss */
+  header div.event_button {
+    clear: both;
+    overflow: hidden;
+    *zoom: 1;
+    float: none;
+    width: 100%;
+    margin-top: 15px;
+  }
+  /* line 264, ../components/sass/4.articles/_header.scss */
+  header div.event_button a.button {
+    float: left;
+  }
+}
+/*=========ARTICLE IDEAS LAYOUT=========*/
+/* line 2, ../components/sass/4.articles/_ideas.scss */
+article.ideas {
+  margin-bottom: 70px;
+  margin-top: 70px;
+}
+/* line 6, ../components/sass/4.articles/_ideas.scss */
+article.ideas section.tabs div.tabs_container {
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 8, ../components/sass/4.articles/_ideas.scss */
+article.ideas section.tabs div.tabs_container .tabs_menu {
+  overflow: hidden;
+  *zoom: 1;
+  background: #fafafa;
+  margin-bottom: 0;
+}
+/* line 12, ../components/sass/4.articles/_ideas.scss */
+article.ideas section.tabs div.tabs_container .tabs_menu li {
+  float: left;
+  list-style-type: none;
+}
+/* line 16, ../components/sass/4.articles/_ideas.scss */
+article.ideas section.tabs div.tabs_container .tabs_menu li:first-child {
+  margin-left: 40px;
+}
+/* line 19, ../components/sass/4.articles/_ideas.scss */
+article.ideas section.tabs div.tabs_container .tabs_menu li a {
+  color: #888888;
+  text-decoration: none;
+  display: inline-block;
+  padding: 18px 20px;
+  font-size: 0.9em;
+  cursor: pointer;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+}
+/* line 29, ../components/sass/4.articles/_ideas.scss */
+article.ideas section.tabs div.tabs_container .tabs_menu li.current {
+  position: relative;
+  background-color: #1f8bc5;
+  z-index: 5;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+/* line 35, ../components/sass/4.articles/_ideas.scss */
+article.ideas section.tabs div.tabs_container .tabs_menu .current a {
+  color: #ffffff;
+}
+/* line 39, ../components/sass/4.articles/_ideas.scss */
+article.ideas section.tabs div.tabs_container .tab {
+  float: left;
+  width: auto;
+  clear: both;
+}
+/* line 45, ../components/sass/4.articles/_ideas.scss */
+article.ideas section.tabs div.tabs_container #tab_1 {
+  display: block;
+}
+/* line 48, ../components/sass/4.articles/_ideas.scss */
+article.ideas section.tabs div.tabs_container div.tab_content {
+  display: none;
+}
+/* line 50, ../components/sass/4.articles/_ideas.scss */
+article.ideas section.tabs div.tabs_container div.tab_content h3 {
+  font-size: 1.1em;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  letter-spacing: 1.4px;
+}
+/* line 56, ../components/sass/4.articles/_ideas.scss */
+article.ideas section.tabs div.tabs_container div.tab_content > p {
+  background: #1f8bc5;
+  font-size: 1.1em;
+  color: #ffffff;
+  padding: 70px 30%;
+  font-family: Arvo, serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+/* line 64, ../components/sass/4.articles/_ideas.scss */
+article.ideas section.tabs div.tabs_container div.tab_content div.grid_row {
+  width: 100%;
+}
+/* line 70, ../components/sass/4.articles/_ideas.scss */
+article.ideas section.tabs div.tabs_container div.tab_content div.grid_content {
+  width: 33.33%;
+  float: left;
+  border-bottom: 1px solid #e6eaeb;
+  position: relative;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 78, ../components/sass/4.articles/_ideas.scss */
+article.ideas section.tabs div.tabs_container div.tab_content div.grid_content:nth-child(2) {
+  outline: 1px solid #e6eaeb;
+}
+/* line 81, ../components/sass/4.articles/_ideas.scss */
+article.ideas section.tabs div.tabs_container div.tab_content div.grid_content img {
+  width: 100%;
+  outline: 1px solid #ffffff;
+}
+/* line 85, ../components/sass/4.articles/_ideas.scss */
+article.ideas section.tabs div.tabs_container div.tab_content div.grid_content div {
+  padding-bottom: 120px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/* line 89, ../components/sass/4.articles/_ideas.scss */
+article.ideas section.tabs div.tabs_container div.tab_content div.grid_content div a {
+  display: inline-block;
+  margin-left: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: absolute;
+  left: 20;
+  bottom: 0;
+}
+
+/*=========ARTICLE IDEAS STYLES=========*/
+/*=========MEDIA QUERIES=========*/
+/* Samsungs 3,4,5 and iPhones 5, 6, and 6+ ----------- */
+@media screen and (max-width: 768px) {
+  /* line 114, ../components/sass/4.articles/_ideas.scss */
+  article.ideas {
+    margin: 35px 0;
+  }
+  /* line 117, ../components/sass/4.articles/_ideas.scss */
+  article.ideas section.tabs div.tabs_container {
+    padding-left: 0;
+  }
+  /* line 120, ../components/sass/4.articles/_ideas.scss */
+  article.ideas section.tabs div.tabs_container div.tab_content p {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* line 124, ../components/sass/4.articles/_ideas.scss */
+  article.ideas section.tabs div.tabs_container div.tab_content div.grid_content {
+    width: 100%;
+    display: block;
+  }
+  /* line 127, ../components/sass/4.articles/_ideas.scss */
+  article.ideas section.tabs div.tabs_container div.tab_content div.grid_content img {
+    width: 100%;
+    outline: none;
+  }
+  /* line 131, ../components/sass/4.articles/_ideas.scss */
+  article.ideas section.tabs div.tabs_container div.tab_content div.grid_content div {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 0;
+  }
+  /* line 135, ../components/sass/4.articles/_ideas.scss */
+  article.ideas section.tabs div.tabs_container div.tab_content div.grid_content div p {
+    padding: 0;
+  }
+  /* line 138, ../components/sass/4.articles/_ideas.scss */
+  article.ideas section.tabs div.tabs_container div.tab_content div.grid_content div a.button {
+    margin-bottom: 35px;
+    margin-top: 35px;
+    position: static;
+  }
+}
+/*=========ARTICLE FIVE REASONS STYLES=========*/
+/* line 3, ../components/sass/4.articles/_reasons.scss */
+.five_reasons section.reasons_title {
+  position: relative;
+}
+/* line 5, ../components/sass/4.articles/_reasons.scss */
+.five_reasons section.reasons_title h3 {
+  text-align: center;
+  margin-top: 70px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #0a3a60;
+  letter-spacing: 3px;
+  line-height: 35px;
+  border-bottom: 1px solid #91cff4;
+  border-top: 1px solid #91cff4;
+}
+/* line 15, ../components/sass/4.articles/_reasons.scss */
+.five_reasons section.reasons_title h3 span {
+  display: block;
+}
+/* line 19, ../components/sass/4.articles/_reasons.scss */
+.five_reasons section.reasons_title .center {
+  height: 18px;
+  padding: 5px;
+  background: #ffffff;
+  position: absolute;
+  left: 50%;
+  top: 98%;
+  margin-left: -18px;
+  margin-top: -9px;
+  border-radius: 50%;
+}
+/* line 29, ../components/sass/4.articles/_reasons.scss */
+.five_reasons section.reasons_title .center img {
+  border-radius: 50%;
+}
+/* line 35, ../components/sass/4.articles/_reasons.scss */
+.five_reasons section.leaders .physicians_left, .five_reasons section.leaders .physicians_right {
+  display: none;
+}
+/* line 38, ../components/sass/4.articles/_reasons.scss */
+.five_reasons section.leaders .reasons_wrapper {
+  margin-bottom: 60px;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 45, ../components/sass/4.articles/_reasons.scss */
+.five_reasons section.leaders ul {
+  list-style: none;
+  width: 100%;
+}
+/* line 49, ../components/sass/4.articles/_reasons.scss */
+.five_reasons section.leaders ul li {
+  float: left;
+  width: 20%;
+  position: relative;
+}
+/* line 54, ../components/sass/4.articles/_reasons.scss */
+.five_reasons section.leaders ul li:hover .physicians_overlay {
+  opacity: 1;
+  background: rgba(37, 138, 193, 0.8);
+}
+/* line 58, ../components/sass/4.articles/_reasons.scss */
+.five_reasons section.leaders ul li img {
+  width: 100%;
+  float: left;
+}
+/* line 62, ../components/sass/4.articles/_reasons.scss */
+.five_reasons section.leaders ul li .physicians_overlay {
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+}
+/* line 74, ../components/sass/4.articles/_reasons.scss */
+.five_reasons section.leaders ul li .physicians_overlay p {
+  text-align: center;
+  margin-top: 43%;
+  padding-left: 5px;
+  padding-left: 5px;
+  color: #ffffff;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+}
+/* line 84, ../components/sass/4.articles/_reasons.scss */
+.five_reasons section.leaders ul .learn_more {
+  width: 40%;
+  background: #1f8bc5;
+}
+/* line 87, ../components/sass/4.articles/_reasons.scss */
+.five_reasons section.leaders ul .learn_more a {
+  text-decoration: none;
+}
+/* line 91, ../components/sass/4.articles/_reasons.scss */
+.five_reasons section.leaders ul .learn_more div p {
+  color: #ffffff;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 25px;
+  padding-top: 20%;
+}
+/* line 97, ../components/sass/4.articles/_reasons.scss */
+.five_reasons section.leaders ul .learn_more div p span {
+  display: block;
+}
+
+/*=========MEDIA QUERIES=========*/
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  /* line 111, ../components/sass/4.articles/_reasons.scss */
+  .physicians_left, .physicians_right {
+    display: none;
+  }
+}
+/* Samsungs 3,4,5 and iPhones 5, 6, and 6+ ----------- */
+@media screen and (max-width: 768px) {
+  /* line 118, ../components/sass/4.articles/_reasons.scss */
+  article.five_reasons {
+    margin-bottom: 40px;
+  }
+  /* line 121, ../components/sass/4.articles/_reasons.scss */
+  article.five_reasons section.reasons_title h3 {
+    font-size: 1.6em;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  /* line 127, ../components/sass/4.articles/_reasons.scss */
+  article.five_reasons div.reasons_headers {
+    margin-top: 70px;
+  }
+  /* line 131, ../components/sass/4.articles/_reasons.scss */
+  article.five_reasons div.reasons_content h4 {
+    margin-bottom: 20px;
+  }
+  /* line 135, ../components/sass/4.articles/_reasons.scss */
+  article.five_reasons section.leaders {
+    overflow: auto;
+  }
+  /* line 137, ../components/sass/4.articles/_reasons.scss */
+  article.five_reasons section.leaders div.physicians {
+    width: 100%;
+  }
+  /* line 140, ../components/sass/4.articles/_reasons.scss */
+  article.five_reasons section.leaders ul {
+    overflow: hidden;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  /* line 143, ../components/sass/4.articles/_reasons.scss */
+  article.five_reasons section.leaders ul .physicians_left, article.five_reasons section.leaders ul .physicians_right {
+    display: none;
+  }
+  /* line 146, ../components/sass/4.articles/_reasons.scss */
+  article.five_reasons section.leaders ul li {
+    width: 33.3333%;
+  }
+  /* line 148, ../components/sass/4.articles/_reasons.scss */
+  article.five_reasons section.leaders ul li .physicians_overlay {
+    background: rgba(37, 138, 193, 0.8);
+    height: 15%;
+    padding: 10px;
+    opacity: 1;
+    top: 86%;
+    left: 0px;
+  }
+  /* line 156, ../components/sass/4.articles/_reasons.scss */
+  article.five_reasons section.leaders ul li .physicians_overlay p {
+    margin-top: 0px;
+    line-height: 15px;
+    font-size: 0.8em;
+    letter-spacing: 1.1px;
+  }
+  /* line 164, ../components/sass/4.articles/_reasons.scss */
+  article.five_reasons section.leaders ul li.learn_more {
+    width: 66.666%;
+  }
+  /* line 169, ../components/sass/4.articles/_reasons.scss */
+  article.five_reasons section.leaders ul li.learn_more div p {
+    padding-top: 20%;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* line 188, ../components/sass/4.articles/_reasons.scss */
+  article.five_reasons section.leaders ul li .physicians_overlay p {
+    font-size: 0.6em;
+    line-height: 10px;
+  }
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media screen and (max-width: 480px) {
+  /* line 201, ../components/sass/4.articles/_reasons.scss */
+  article.five_reasons {
+    margin-bottom: 40px;
+  }
+  /* line 204, ../components/sass/4.articles/_reasons.scss */
+  article.five_reasons section.reasons_title h3 {
+    font-size: 1.6em;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  /* line 210, ../components/sass/4.articles/_reasons.scss */
+  article.five_reasons div.reasons_headers {
+    margin-top: 70px;
+  }
+  /* line 214, ../components/sass/4.articles/_reasons.scss */
+  article.five_reasons div.reasons_content h4 {
+    margin-bottom: 20px;
+  }
+  /* line 218, ../components/sass/4.articles/_reasons.scss */
+  article.five_reasons section.leaders {
+    overflow: hidden;
+    position: relative;
+  }
+  /* line 221, ../components/sass/4.articles/_reasons.scss */
+  article.five_reasons section.leaders .physicians_left, article.five_reasons section.leaders .physicians_right {
+    display: inline-block;
+    padding: 30px 30px;
+    background: #eeeeee;
+    cursor: pointer;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    z-index: 10;
+  }
+  /* line 232, ../components/sass/4.articles/_reasons.scss */
+  article.five_reasons section.leaders .physicians_left {
+    position: absolute;
+    top: 54%;
+    left: 0px;
+    background: rgba(157, 157, 157, 0.5);
+  }
+  /* line 238, ../components/sass/4.articles/_reasons.scss */
+  article.five_reasons section.leaders .physicians_right {
+    position: absolute;
+    top: 54%;
+    right: 0px;
+  }
+  /* line 243, ../components/sass/4.articles/_reasons.scss */
+  article.five_reasons section.leaders div.physicians {
+    width: 200%;
+  }
+  /* line 246, ../components/sass/4.articles/_reasons.scss */
+  article.five_reasons section.leaders ul {
+    overflow: hidden;
+  }
+  /* line 248, ../components/sass/4.articles/_reasons.scss */
+  article.five_reasons section.leaders ul li {
+    width: 25%;
+  }
+  /* line 250, ../components/sass/4.articles/_reasons.scss */
+  article.five_reasons section.leaders ul li .physicians_overlay {
+    background: rgba(37, 138, 193, 0.8);
+    height: 15%;
+    padding: 10px;
+    opacity: 1;
+    top: 85%;
+    left: 0px;
+  }
+  /* line 258, ../components/sass/4.articles/_reasons.scss */
+  article.five_reasons section.leaders ul li .physicians_overlay p {
+    margin-top: 0px;
+    line-height: 15px;
+    font-size: 0.8em;
+    letter-spacing: 1.1px;
+  }
+  /* line 266, ../components/sass/4.articles/_reasons.scss */
+  article.five_reasons section.leaders ul li.learn_more {
+    width: 25%;
+  }
+  /* line 269, ../components/sass/4.articles/_reasons.scss */
+  article.five_reasons section.leaders ul li.learn_more div p {
+    padding-top: 40%;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 320px) {
+  /* line 284, ../components/sass/4.articles/_reasons.scss */
+  article.five_reasons section.leaders {
+    overflow: hidden;
+    position: relative;
+  }
+  /* line 287, ../components/sass/4.articles/_reasons.scss */
+  article.five_reasons section.leaders ul li .physicians_overlay {
+    top: 80%;
+    height: 50px;
+    padding-top: 7px;
+  }
+  /* line 291, ../components/sass/4.articles/_reasons.scss */
+  article.five_reasons section.leaders ul li .physicians_overlay p {
+    line-height: 17px;
+    font-size: 0.6em;
+  }
+  /* line 299, ../components/sass/4.articles/_reasons.scss */
+  article.five_reasons section.leaders ul li.learn_more div p {
+    padding-top: 27%;
+  }
+  /* line 308, ../components/sass/4.articles/_reasons.scss */
+  article.five_reasons section.leaders .physicians_left {
+    position: absolute;
+    top: 63.5%;
+    padding: 20px;
+  }
+  /* line 313, ../components/sass/4.articles/_reasons.scss */
+  article.five_reasons section.leaders .physicians_right {
+    position: absolute;
+    top: 63.5%;
+    padding: 20px;
+  }
+}
+/*=========ARTICLE RESOURCES LAYOUT=========*/
+/* line 2, ../components/sass/4.articles/_resources.scss */
+article.resources {
+  clear: both;
+}
+/* line 4, ../components/sass/4.articles/_resources.scss */
+article.resources h3 {
+  padding-bottom: 35px;
+}
+/* line 7, ../components/sass/4.articles/_resources.scss */
+article.resources section {
+  overflow: hidden;
+  *zoom: 1;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+}
+/* line 11, ../components/sass/4.articles/_resources.scss */
+article.resources section:last-child {
+  margin-bottom: 0px;
+}
+/* line 14, ../components/sass/4.articles/_resources.scss */
+article.resources section div {
+  position: relative;
+  overflow: hidden;
+}
+/* line 17, ../components/sass/4.articles/_resources.scss */
+article.resources section div div#caption_overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 15px;
+}
+/* line 26, ../components/sass/4.articles/_resources.scss */
+article.resources .resources_headings div {
+  float: left;
+  width: 50%;
+}
+/* line 32, ../components/sass/4.articles/_resources.scss */
+article.resources .innovator div, article.resources .facilities div, article.resources .simulation div {
+  float: left;
+}
+/* line 34, ../components/sass/4.articles/_resources.scss */
+article.resources .innovator div:nth-child(1), article.resources .facilities div:nth-child(1), article.resources .simulation div:nth-child(1) {
+  width: 40%;
+  padding-right: 4%;
+}
+/* line 38, ../components/sass/4.articles/_resources.scss */
+article.resources .innovator div:nth-child(2), article.resources .facilities div:nth-child(2), article.resources .simulation div:nth-child(2) {
+  width: 56%;
+}
+/* line 40, ../components/sass/4.articles/_resources.scss */
+article.resources .innovator div:nth-child(2) .resources_images, article.resources .facilities div:nth-child(2) .resources_images, article.resources .simulation div:nth-child(2) .resources_images {
+  float: left;
+  width: 100%;
+}
+/* line 45, ../components/sass/4.articles/_resources.scss */
+article.resources .innovator div .chevron_resources.mobile, article.resources .facilities div .chevron_resources.mobile, article.resources .simulation div .chevron_resources.mobile {
+  display: none;
+}
+/* line 48, ../components/sass/4.articles/_resources.scss */
+article.resources .innovator div .chevron_resources, article.resources .facilities div .chevron_resources, article.resources .simulation div .chevron_resources {
+  padding: 8.5px 12px;
+  position: absolute;
+  bottom: 0;
+}
+/* line 52, ../components/sass/4.articles/_resources.scss */
+article.resources .innovator div .chevron_resources:nth-child(2), article.resources .facilities div .chevron_resources:nth-child(2), article.resources .simulation div .chevron_resources:nth-child(2) {
+  right: 66px;
+}
+/* line 55, ../components/sass/4.articles/_resources.scss */
+article.resources .innovator div .chevron_resources:nth-child(3), article.resources .facilities div .chevron_resources:nth-child(3), article.resources .simulation div .chevron_resources:nth-child(3) {
+  right: 30px;
+}
+
+/*=========ARTICLE RESOURCES STYLES=========*/
+/* line 64, ../components/sass/4.articles/_resources.scss */
+article.resources {
+  background: #fafafa;
+}
+/* line 66, ../components/sass/4.articles/_resources.scss */
+article.resources section {
+  border-bottom: 1px solid #91cff4;
+}
+/* line 68, ../components/sass/4.articles/_resources.scss */
+article.resources section:last-child {
+  margin-bottom: 0px;
+}
+/* line 72, ../components/sass/4.articles/_resources.scss */
+article.resources section div div#caption_overlay {
+  background: rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+}
+/* line 80, ../components/sass/4.articles/_resources.scss */
+article.resources .innovator div .chevron_resources, article.resources .facilities div .chevron_resources, article.resources .simulation div .chevron_resources {
+  background: #eeeeee;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/* line 83, ../components/sass/4.articles/_resources.scss */
+article.resources .innovator div .chevron_resources:hover, article.resources .facilities div .chevron_resources:hover, article.resources .simulation div .chevron_resources:hover {
+  cursor: pointer;
+  background: #e3e3e3;
+}
+
+/*=========MEDIA QUERIES=========*/
+/* iPads (portrait and landscape) ----------- */
+/* Samsungs 3,4,5 and iPhones 5, 6, and 6+ ----------- */
+@media screen and (max-width: 768px) {
+  /* line 102, ../components/sass/4.articles/_resources.scss */
+  article.resources {
+    padding: 40px 0 50px;
+    margin-bottom: 35px;
+  }
+  /* line 105, ../components/sass/4.articles/_resources.scss */
+  article.resources .resources_headings {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  /* line 109, ../components/sass/4.articles/_resources.scss */
+  article.resources .resources_headings div:first-child {
+    padding-top: 0;
+  }
+  /* line 112, ../components/sass/4.articles/_resources.scss */
+  article.resources .resources_headings div:nth-child(2) {
+    padding-top: 40px;
+  }
+  /* line 118, ../components/sass/4.articles/_resources.scss */
+  article.resources .innovator div, article.resources .facilities div, article.resources .simulation div {
+    float: none;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  /* line 121, ../components/sass/4.articles/_resources.scss */
+  article.resources .innovator div:nth-child(1), article.resources .facilities div:nth-child(1), article.resources .simulation div:nth-child(1) {
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* line 127, ../components/sass/4.articles/_resources.scss */
+  article.resources .innovator div:nth-child(2), article.resources .facilities div:nth-child(2), article.resources .simulation div:nth-child(2) {
+    width: 100%;
+  }
+  /* line 130, ../components/sass/4.articles/_resources.scss */
+  article.resources .innovator div .chevron_resources.mobile, article.resources .facilities div .chevron_resources.mobile, article.resources .simulation div .chevron_resources.mobile {
+    display: inline;
+    position: absolute;
+    bottom: 45%;
+    width: 10px;
+    padding: 15px 20px;
+  }
+  /* line 136, ../components/sass/4.articles/_resources.scss */
+  article.resources .innovator div .chevron_resources.mobile:nth-child(1), article.resources .facilities div .chevron_resources.mobile:nth-child(1), article.resources .simulation div .chevron_resources.mobile:nth-child(1) {
+    left: 30px;
+  }
+  /* line 139, ../components/sass/4.articles/_resources.scss */
+  article.resources .innovator div .chevron_resources.mobile:nth-child(2), article.resources .facilities div .chevron_resources.mobile:nth-child(2), article.resources .simulation div .chevron_resources.mobile:nth-child(2) {
+    right: 30px;
+  }
+  /* line 143, ../components/sass/4.articles/_resources.scss */
+  article.resources .innovator div .chevron_resources, article.resources .facilities div .chevron_resources, article.resources .simulation div .chevron_resources {
+    display: none;
+  }
+  /* line 147, ../components/sass/4.articles/_resources.scss */
+  article.resources .innovator h3, article.resources .facilities h3, article.resources .simulation h3 {
+    padding-bottom: 15px;
+  }
+  /* line 150, ../components/sass/4.articles/_resources.scss */
+  article.resources .innovator div.innovator_wrapper, article.resources .innovator div.facilities_wrapper, article.resources .innovator div.simulation_wrapper, article.resources .facilities div.innovator_wrapper, article.resources .facilities div.facilities_wrapper, article.resources .facilities div.simulation_wrapper, article.resources .simulation div.innovator_wrapper, article.resources .simulation div.facilities_wrapper, article.resources .simulation div.simulation_wrapper {
+    margin-top: 50px;
+  }
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media screen and (max-width: 480px) {
+  /* line 159, ../components/sass/4.articles/_resources.scss */
+  article.resources {
+    padding: 40px 0 50px;
+    margin-bottom: 35px;
+  }
+  /* line 162, ../components/sass/4.articles/_resources.scss */
+  article.resources .resources_headings {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  /* line 166, ../components/sass/4.articles/_resources.scss */
+  article.resources .resources_headings div:first-child {
+    padding-top: 0;
+  }
+  /* line 169, ../components/sass/4.articles/_resources.scss */
+  article.resources .resources_headings div:nth-child(2) {
+    padding-top: 40px;
+  }
+  /* line 175, ../components/sass/4.articles/_resources.scss */
+  article.resources .innovator div, article.resources .facilities div, article.resources .simulation div {
+    float: none;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  /* line 178, ../components/sass/4.articles/_resources.scss */
+  article.resources .innovator div:nth-child(1), article.resources .facilities div:nth-child(1), article.resources .simulation div:nth-child(1) {
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* line 184, ../components/sass/4.articles/_resources.scss */
+  article.resources .innovator div:nth-child(2), article.resources .facilities div:nth-child(2), article.resources .simulation div:nth-child(2) {
+    width: 100%;
+  }
+  /* line 187, ../components/sass/4.articles/_resources.scss */
+  article.resources .innovator div .chevron_resources.mobile, article.resources .facilities div .chevron_resources.mobile, article.resources .simulation div .chevron_resources.mobile {
+    display: inline;
+    position: absolute;
+    bottom: 50%;
+    width: 10px;
+    padding: 15px 20px;
+    bottom: 42%;
+  }
+  /* line 194, ../components/sass/4.articles/_resources.scss */
+  article.resources .innovator div .chevron_resources.mobile:nth-child(1), article.resources .facilities div .chevron_resources.mobile:nth-child(1), article.resources .simulation div .chevron_resources.mobile:nth-child(1) {
+    left: 20px;
+  }
+  /* line 197, ../components/sass/4.articles/_resources.scss */
+  article.resources .innovator div .chevron_resources.mobile:nth-child(2), article.resources .facilities div .chevron_resources.mobile:nth-child(2), article.resources .simulation div .chevron_resources.mobile:nth-child(2) {
+    right: 20px;
+  }
+  /* line 201, ../components/sass/4.articles/_resources.scss */
+  article.resources .innovator div .chevron_resources, article.resources .facilities div .chevron_resources, article.resources .simulation div .chevron_resources {
+    display: none;
+  }
+  /* line 205, ../components/sass/4.articles/_resources.scss */
+  article.resources .innovator h3, article.resources .facilities h3, article.resources .simulation h3 {
+    padding-bottom: 15px;
+  }
+  /* line 208, ../components/sass/4.articles/_resources.scss */
+  article.resources .innovator div.innovator_wrapper, article.resources .innovator div.facilities_wrapper, article.resources .innovator div.simulation_wrapper, article.resources .facilities div.innovator_wrapper, article.resources .facilities div.facilities_wrapper, article.resources .facilities div.simulation_wrapper, article.resources .simulation div.innovator_wrapper, article.resources .simulation div.facilities_wrapper, article.resources .simulation div.simulation_wrapper {
+    margin-top: 50px;
+  }
+}
