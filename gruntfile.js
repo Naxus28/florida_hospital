@@ -27,7 +27,7 @@ module.exports = function(grunt){
     uglify : {
       my_target : {
         files : {
-          '_/js/script.js' : [ '_/components/js/*.js' ]
+          '_/js/script.js' : [ 'public/components/js/*.js' ]
         }//file
       }//my_target
     },//uglify
@@ -46,13 +46,13 @@ module.exports = function(grunt){
       
       //watches and uglifies the scripts for every change we make. If only this task is being watched, the object "scripts" is unnecessary. We can simply use the files array and the tasks array and it will work fine
       scripts : {
-        files : [ '_/components/js/carousel.js','_/components/js/script.js'],
+        files : [ 'public/components/js/carousel.js','public/components/js/script.js'],
         tasks : [ 'uglify' ]
       },//scripts
       
      //watches for changes in the scss and performs a task when the file is changed. Task is defined above in the compass object. It is going to look in the config.rb file and execute whatever is there. This will allow us to compile sass into css on save without having to run the sass command "sass --watch input.scss:output.css" in the terminal */
       sass : {
-        files : [ '_/components/sass/*.scss','_/components/sass/*/*.scss'  ], 
+        files : [ 'public/components/sass/*.scss','public/components/sass/*/*.scss'  ], 
         tasks : [ 'compass:dev' ]
       },//compsass
 
